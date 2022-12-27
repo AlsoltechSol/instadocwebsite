@@ -2,54 +2,53 @@
 @section('title',"Home")
 
 @section('content')
-    <section class="banner-section"
-        style="background-image: url('http://labartisan.net/demo/mukti/assets/images/banner/1.jpg');">
-        <div class="container">
-            <div class="banner-wrapper">
-                <div class="banner-content">
-                    <h2 class="wow fadeInDown" data-wow-duration="2s" data-wow-delay=".1s">Get Best Medical
-                        Consultations
-                    </h2>
-                    <h1 class="wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".1s"><b>Medicine Order</b> And Help On Your Medical Visits...</h1>
+<section class="banner-section" style="background-image: url('http://labartisan.net/demo/mukti/assets/images/banner/1.jpg');">
+    <div class="container">
+        <div class="banner-wrapper">
+            <div class="banner-content">
+                <h2 class="wow fadeInDown" data-wow-duration="2s" data-wow-delay=".1s">Get Best Medical
+                    Consultations
+                </h2>
+                <h1 class="wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".1s"><b>Medicine Order</b> And Help On Your Medical Visits...</h1>
 
-                </div>
             </div>
         </div>
-    </section>
-    <!-- ==========Banner Section Ends Here========== -->
+    </div>
+</section>
+<!-- ==========Banner Section Ends Here========== -->
 
 
-    <!-- ==========Feature Section Start Here========== -->
-    <section id="about" class="service-section style-1 padding-tb bg-color">
-        <div class="container">
-            <div class="section-header wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
-                <h2><span>About Us</span></h2>
+<!-- ==========Feature Section Start Here========== -->
+<section id="about" class="service-section style-1 padding-tb bg-color">
+    <div class="container">
+        <div class="section-header wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+            <h2><span>About Us</span></h2>
 
-            </div>
-            <div class="section-wrapper">
-                <div class="service-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
-                    <div class="service-inner">
-                        <div class="service-thumb">
-                            <img src="http://labartisan.net/demo/mukti/assets/images/service/01.jpg" alt="service">
-                        </div>
-                        <div class="service-content">
+        </div>
+        <div class="section-wrapper">
+            <div class="service-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+                <div class="service-inner">
+                    <div class="service-thumb">
+                        <img src="http://labartisan.net/demo/mukti/assets/images/service/01.jpg" alt="service">
+                    </div>
+                    <div class="service-content">
 
-                            <p>Our services help patients where distance is a critical factor. We bridge the gap and
-                                bring them in touch with the best medical facilities. Hence our services can help
-                                patients coming from distant places with facilities such as providing them with
-                                information for improved diagnosis and support for allopathic, homeopathic, and
-                                ayurvedic treatment. Our specific facilities will enable patients to acquire both online
-                                and offline consultations with our expert doctors, order medicine, request diagnostic
-                                tests, and get support with visa or passport-related matters, all ticketing inside
-                                India, pick up and drop services from the airport, train station and bus stop
-                                accommodation, medical guide and many more.
-                            </p>
+                        <p>Our services help patients where distance is a critical factor. We bridge the gap and
+                            bring them in touch with the best medical facilities. Hence our services can help
+                            patients coming from distant places with facilities such as providing them with
+                            information for improved diagnosis and support for allopathic, homeopathic, and
+                            ayurvedic treatment. Our specific facilities will enable patients to acquire both online
+                            and offline consultations with our expert doctors, order medicine, request diagnostic
+                            tests, and get support with visa or passport-related matters, all ticketing inside
+                            India, pick up and drop services from the airport, train station and bus stop
+                            accommodation, medical guide and many more.
+                        </p>
 
-                        </div>
                     </div>
                 </div>
             </div>
-            {{-- 
+        </div>
+        {{--
             <div class="container">
                 <div class="feature-section-wrapper">
                     <div class="section-header wow fadeInUp" data-wow-delay="" data-wow-duration="1s">
@@ -115,304 +114,280 @@
             </div> --}}
 
 
-        </div>
-    </section>
+    </div>
+</section>
 
-    <!-- ==========Feature Section Ends Here========== -->
-
-
-    <!-- ==========Department Section Start Here========== -->
-    <section id="services" class="department-section padding-tb style-1">
-        <div class="container">
-            <div class="department-wrapper">
-                <div class="section-header">
-                    <h2><span>Our Services </span></h2>
-
-                </div>
-                <div class="section-content">
-                    <div class="row">
-                        <div class="col-12 col-xl-12">
-                            <div class="">
-                                <div class="department-top">
-                                    <ul class="nav dep-tab" role="tablist">
-                                        <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
-                                            <a class="active" href="#one" role="tab" data-toggle="tab"><img
-                                                    style="width: 60px !important; height: 60px !important"
-                                                    src="https://cdn-icons-png.flaticon.com/512/5996/5996051.png"
-                                                    alt="depart"></a>
-                                        </li>
-                                        <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
-                                            <a class="" href="#two" role="tab" data-toggle="tab"><img
-                                                    src="http://labartisan.net/demo/mukti/assets/images/depart/icon/01.png"
-                                                    alt="depart"></a>
-                                        </li>
-                                        <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-                                            <a class="" href="#three" role="tab" data-toggle="tab"><img
-                                                    src="http://labartisan.net/demo/mukti/assets/images/depart/icon/07.png"
-                                                    alt="depart"></a>
-                                        </li>
-                                        <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
-                                            <a class="" href="#four" role="tab" data-toggle="tab"><img
-                                                    style="width: 60px !important; height: 60px !important"
-                                                    src="https://cdn-icons-png.flaticon.com/512/196/196578.png"
-                                                    alt="depart"></a>
-                                        </li>
-                                        <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
-                                            <a class="" href="#five" role="tab" data-toggle="tab"><img
-                                                    style="width: 60px !important; height: 60px !important"
-                                                    src="https://cdn-icons-png.flaticon.com/512/3595/3595848.png"
-                                                    alt="depart"></a>
-                                        </li>
-                                        
-
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="department-bottom wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-                                <div class="tab-content">
-                                    <div role="tabpanel" class="tab-pane fade in active" id="one">
-                                        <div class="row flex-row-reverse align-items-center">
-                                            <div class="col-12 col-lg-6">
-                                                <div class="post-thumb">
-                                                    <img style="height: 350px !important; width:560px !important"
-                                                        src="https://images.pexels.com/photos/4225920/pexels-photo-4225920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                                        alt="depart">
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-lg-6">
-                                                <div class="post-content">
-                                                    <h3>Medical Consultation</h3>
-                                                    <p>Are you looking to consult with trustworthy doctors and get
-                                                        medical facilities at an affordable cost? We have the best
-                                                        doctors registered with us who not only provide consultation
-                                                        online but also can be visited offline. Call us at the below
-                                                        number for further details.</p>
+<!-- ==========Feature Section Ends Here========== -->
 
 
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div role="tabpanel" class="tab-pane fade in" id="two">
-                                        <div class="row flex-row-reverse align-items-center">
-                                            <div class="col-12 col-lg-6">
-                                                <div class="post-thumb">
-                                                    <img style="height: 350px !important; width:560px !important"
-                                                        src="https://images.pexels.com/photos/139398/thermometer-headache-pain-pills-139398.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                                        alt="depart">
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-lg-6">
-                                                <div class="post-content">
-                                                    <h3>Medicine Order</h3>
-                                                    <p>Do you want to order some medicine and wish them to be delivered
-                                                        in no time at a reasonable cost from outside India? We have a
-                                                        wonderful chain of delivery that ensures that your medicines
-                                                        reach you on time. Call us at the below number to order
-                                                        medicine.</p>
+<!-- ==========Department Section Start Here========== -->
+<section id="services" class="department-section padding-tb style-1">
+    <div class="container">
+        <div class="department-wrapper">
+            <div class="section-header">
+                <h2><span>Our Services </span></h2>
 
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div role="tabpanel" class="tab-pane fade in" id="three">
-                                        <div class="row flex-row-reverse align-items-center">
-                                            <div class="col-12 col-lg-6">
-                                                <div class="post-thumb">
-                                                    <img style="height: 350px !important; width:560px !important"
-                                                        src="https://images.pexels.com/photos/2280571/pexels-photo-2280571.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                                        alt="depart">
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-lg-6">
-                                                <div class="post-content">
-                                                    <h3>Lab Test</h3>
-                                                    <p>Book your lab test with our InstaDoctor registered labs. Get all
-                                                        your Lab tests done at a reasonable rate and get hassle-free
-                                                        sample collection and report delivery. Call us at the below
-                                                        number to book a test.</p>
-
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div role="tabpanel" class="tab-pane fade in" id="four">
-                                        <div class="row flex-row-reverse align-items-center">
-                                            <div class="col-12 col-lg-6">
-                                                <div class="post-thumb">
-                                                    <img style="height: 350px !important; width:560px !important"
-                                                        src="https://images.pexels.com/photos/346798/pexels-photo-346798.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                                        alt="depart">
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-lg-6">
-                                                <div class="post-content">
-                                                    <h3>Visa & Passports for medical visits</h3>
-                                                    <p>Our team in InstaDoctor helps you to prepare your visa
-                                                        application to get a quick medical visa. We also help with
-                                                        passport and cross-border travel for medical purposes. Call us
-                                                        at the below number to get assistance on your medical visits.
-                                                    </p>
-
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div role="tabpanel" class="tab-pane fade in" id="five">
-                                        <div class="row flex-row-reverse align-items-center">
-                                            <div class="col-12 col-lg-6">
-                                                <div class="post-thumb">
-                                                    <img style="height: 350px !important; width:560px !important"
-                                                        src="https://images.pexels.com/photos/7659567/pexels-photo-7659567.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                                        alt="depart">
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-lg-6">
-                                                <div class="post-content">
-                                                    <h3>Travel Support for medical purposes:</h3>
-                                                    <p>We provide all sorts of travel assistance by bus, train, and
-                                                        flight. Don't bother about your lodging and fooding as we manage
-                                                        that as well during your medical visits. If required we tag
-                                                        along a medical attender to assist you 24*7.</p>
-
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>
-    </section>
-    <!-- ==========Department Section Ends Here========== -->
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-12 col-xl-12">
+                        <div class="">
+                            <div class="department-top">
+                                <ul class="nav dep-tab" role="tablist">
+                                    <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+                                        <a class="active" href="#one" role="tab" data-toggle="tab"><img style="width: 60px !important; height: 60px !important" src="https://cdn-icons-png.flaticon.com/512/5996/5996051.png" alt="depart"></a>
+                                    </li>
+                                    <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+                                        <a class="" href="#two" role="tab" data-toggle="tab"><img src="http://labartisan.net/demo/mukti/assets/images/depart/icon/01.png" alt="depart"></a>
+                                    </li>
+                                    <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                                        <a class="" href="#three" role="tab" data-toggle="tab"><img src="http://labartisan.net/demo/mukti/assets/images/depart/icon/07.png" alt="depart"></a>
+                                    </li>
+                                    <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+                                        <a class="" href="#four" role="tab" data-toggle="tab"><img style="width: 60px !important; height: 60px !important" src="https://cdn-icons-png.flaticon.com/512/196/196578.png" alt="depart"></a>
+                                    </li>
+                                    <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+                                        <a class="" href="#five" role="tab" data-toggle="tab"><img style="width: 60px !important; height: 60px !important" src="https://cdn-icons-png.flaticon.com/512/3595/3595848.png" alt="depart"></a>
+                                    </li>
 
 
-    <!-- ==========Counter Section Start Here========== -->
-    <div class="counter-section style-1 padding-60">
-        <div class="container">
-            <div class="section-wrapper">
-                <div class="counter-item wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".1s">
-                    <div class="counter-item-inner">
-                        <div class="counter-thumb">
-                            <img src="http://labartisan.net/demo/mukti/assets/images/counter/01.png" alt="counter">
+                                </ul>
+                            </div>
                         </div>
-                        <div class="counter-content">
-                            <h3 class="number"><span class="counter">450</span></h3>
-                            <p class="post-content">number of patients served</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="counter-item wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".2s">
-                    <div class="counter-item-inner">
-                        <div class="counter-thumb">
-                            <img src="http://labartisan.net/demo/mukti/assets/images/counter/02.png" alt="counter">
-                        </div>
-                        <div class="counter-content">
-                            <h3 class="number"><span class="counter">27</span></h3>
-                            <p class="post-content">number of doctors tied up</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="counter-item wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">
-                    <div class="counter-item-inner">
-                        <div class="counter-thumb">
-                            <img style="height: 60px !important; width:47px !important"
-                                src="http://labartisan.net/demo/mukti/assets/images/counter/03.png" alt="counter">
-                        </div>
-                        <div class="counter-content">
-                            <h3 class="number"><span class="counter">14</span></h3>
-                            <p class="post-content">hospitals tied up</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="counter-item wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">
-                    <div class="counter-item-inner">
-                        <div class="counter-thumb">
-                            <img src="http://labartisan.net/demo/mukti/assets/images/counter/04.png" alt="counter">
-                        </div>
-                        <div class="counter-content">
-                            <h3 class="number"><span class="counter">134</span></h3>
-                            <p class="post-content">medical visits for patients</p>
+                        <div class="department-bottom wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane fade in active" id="one">
+                                    <div class="row flex-row-reverse align-items-center">
+                                        <div class="col-12 col-lg-6">
+                                            <div class="post-thumb">
+                                                <img style="height: 350px !important; width:560px !important" src="https://images.pexels.com/photos/4225920/pexels-photo-4225920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="depart">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <div class="post-content">
+                                                <h3>Medical Consultation</h3>
+                                                <p>Are you looking to consult with trustworthy doctors and get
+                                                    medical facilities at an affordable cost? We have the best
+                                                    doctors registered with us who not only provide consultation
+                                                    online but also can be visited offline. Call us at the below
+                                                    number for further details.</p>
+                                                <a class="lab-btn" href="./medicalVisitForm.blade.php">Submit Now
+                                                    <i class="fa-solid fa-chevron-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade in" id="two">
+                                    <div class="row flex-row-reverse align-items-center">
+                                        <div class="col-12 col-lg-6">
+                                            <div class="post-thumb">
+                                                <img style="height: 350px !important; width:560px !important" src="https://images.pexels.com/photos/139398/thermometer-headache-pain-pills-139398.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="depart">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <div class="post-content">
+                                                <h3>Medicine Order</h3>
+                                                <p>Do you want to order some medicine and wish them to be delivered
+                                                    in no time at a reasonable cost from outside India? We have a
+                                                    wonderful chain of delivery that ensures that your medicines
+                                                    reach you on time. Call us at the below number to order
+                                                    medicine.</p>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade in" id="three">
+                                    <div class="row flex-row-reverse align-items-center">
+                                        <div class="col-12 col-lg-6">
+                                            <div class="post-thumb">
+                                                <img style="height: 350px !important; width:560px !important" src="https://images.pexels.com/photos/2280571/pexels-photo-2280571.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="depart">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <div class="post-content">
+                                                <h3>Lab Test</h3>
+                                                <p>Book your lab test with our InstaDoctor registered labs. Get all
+                                                    your Lab tests done at a reasonable rate and get hassle-free
+                                                    sample collection and report delivery. Call us at the below
+                                                    number to book a test.</p>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade in" id="four">
+                                    <div class="row flex-row-reverse align-items-center">
+                                        <div class="col-12 col-lg-6">
+                                            <div class="post-thumb">
+                                                <img style="height: 350px !important; width:560px !important" src="https://images.pexels.com/photos/346798/pexels-photo-346798.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="depart">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <div class="post-content">
+                                                <h3>Visa & Passports for medical visits</h3>
+                                                <p>Our team in InstaDoctor helps you to prepare your visa
+                                                    application to get a quick medical visa. We also help with
+                                                    passport and cross-border travel for medical purposes. Call us
+                                                    at the below number to get assistance on your medical visits.
+                                                </p>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade in" id="five">
+                                    <div class="row flex-row-reverse align-items-center">
+                                        <div class="col-12 col-lg-6">
+                                            <div class="post-thumb">
+                                                <img style="height: 350px !important; width:560px !important" src="https://images.pexels.com/photos/7659567/pexels-photo-7659567.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="depart">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <div class="post-content">
+                                                <h3>Travel Support for medical purposes:</h3>
+                                                <p>We provide all sorts of travel assistance by bus, train, and
+                                                    flight. Don't bother about your lodging and fooding as we manage
+                                                    that as well during your medical visits. If required we tag
+                                                    along a medical attender to assist you 24*7.</p>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <section id="contact" class="contact-us padding-tb">
-        <div class="container">
-            <div class="section-header">
-                <h2><span>Contact Us </span></h2>
+</section>
+<!-- ==========Department Section Ends Here========== -->
 
-            </div>
-            <div class="section-wrapper">
-                <div class="row">
-                    <div class="col-lg-6 col-12">
-                        <div class="contact-info">
-                            <h3>Contact Information</h3>
-                            <ul>
-                                <li>
-                                    <h6>Office Address:</h6>
-                                    <p>Biman Saha
-                                        C/o- Pradhan Mantri Bhartiya Janaushadhi Kendra
-                                        Near Madarihat Rural Hospital entry gate
-                                        Vill- Aswaninagar 2 no. Ward
-                                        P.O+P.S- Madarihat
-                                        Dist -Alipurduar
-                                        West Bengal- 735220
-                                    </p>
-                                </li>
-                                <li>
-                                    <h6>Phone Number:</h6>
-                                    <p>7865958508</p>
 
-                                </li>
-                                <li>
-                                    <h6>Whatsapp:</h6>
-                                    <p>8509648067</p>
-
-                                </li>
-                                <li>
-                                    <h6>Email Address:</h6>
-                                    <a href="#">support@instadoctor.co</a>
-                                </li>
-
-                            </ul>
-                        </div>
+<!-- ==========Counter Section Start Here========== -->
+<div class="counter-section style-1 padding-60">
+    <div class="container">
+        <div class="section-wrapper">
+            <div class="counter-item wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".1s">
+                <div class="counter-item-inner">
+                    <div class="counter-thumb">
+                        <img src="http://labartisan.net/demo/mukti/assets/images/counter/01.png" alt="counter">
                     </div>
-                    <div class="col-lg-6 col-12">
-                        <div class="here-form">
-                            <h4>Do you have any queries, suggestions, or requests? Insta Doctor is a chain of patient
-                                care facilities. To contact us, please fill out the form below.</h4>
-                            <form method="POST" action="{{ route('contact.store') }}">
-                                @csrf
-                                <input type="text" id="fname" name="name" placeholder="Your Name">
-                                <input type="email" id="fname" name="email" placeholder="Your Email">
-                                <input type="text" id="lname" name="mobile" placeholder="Phone Number">
-
-                                <textarea name="message" id="" cols="20" rows="5"></textarea>
-
-                                <button class="lab-btn" type="submit"><span>Send <i
-                                            class="icofont-double-right"></i></span></button>
-                            </form>
-                        </div>
+                    <div class="counter-content">
+                        <h3 class="number"><span class="counter">450</span></h3>
+                        <p class="post-content">number of patients served</p>
+                    </div>
+                </div>
+            </div>
+            <div class="counter-item wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".2s">
+                <div class="counter-item-inner">
+                    <div class="counter-thumb">
+                        <img src="http://labartisan.net/demo/mukti/assets/images/counter/02.png" alt="counter">
+                    </div>
+                    <div class="counter-content">
+                        <h3 class="number"><span class="counter">27</span></h3>
+                        <p class="post-content">number of doctors tied up</p>
+                    </div>
+                </div>
+            </div>
+            <div class="counter-item wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">
+                <div class="counter-item-inner">
+                    <div class="counter-thumb">
+                        <img style="height: 60px !important; width:47px !important" src="http://labartisan.net/demo/mukti/assets/images/counter/03.png" alt="counter">
+                    </div>
+                    <div class="counter-content">
+                        <h3 class="number"><span class="counter">14</span></h3>
+                        <p class="post-content">hospitals tied up</p>
+                    </div>
+                </div>
+            </div>
+            <div class="counter-item wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">
+                <div class="counter-item-inner">
+                    <div class="counter-thumb">
+                        <img src="http://labartisan.net/demo/mukti/assets/images/counter/04.png" alt="counter">
+                    </div>
+                    <div class="counter-content">
+                        <h3 class="number"><span class="counter">134</span></h3>
+                        <p class="post-content">medical visits for patients</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</div>
+<section id="contact" class="contact-us padding-tb">
+    <div class="container">
+        <div class="section-header">
+            <h2><span>Contact Us </span></h2>
 
-    <!-- scrollToTop start here -->
-    <a href="#" class="scrollToTop"><i class="icofont-rounded-up"></i></a>
-    <!-- scrollToTop ending here -->
+        </div>
+        <div class="section-wrapper">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <ul>
+                            <li>
+                                <h6>Office Address:</h6>
+                                <p>Biman Saha
+                                    C/o- Pradhan Mantri Bhartiya Janaushadhi Kendra
+                                    Near Madarihat Rural Hospital entry gate
+                                    Vill- Aswaninagar 2 no. Ward
+                                    P.O+P.S- Madarihat
+                                    Dist -Alipurduar
+                                    West Bengal- 735220
+                                </p>
+                            </li>
+                            <li>
+                                <h6>Phone Number:</h6>
+                                <p>7865958508</p>
 
-    @endsection
+                            </li>
+                            <li>
+                                <h6>Whatsapp:</h6>
+                                <p>8509648067</p>
+
+                            </li>
+                            <li>
+                                <h6>Email Address:</h6>
+                                <a href="#">support@instadoctor.co</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="here-form">
+                        <h4>Do you have any queries, suggestions, or requests? Insta Doctor is a chain of patient
+                            care facilities. To contact us, please fill out the form below.</h4>
+                        <form method="POST" action="{{ route('contact.store') }}">
+                            @csrf
+                            <input type="text" id="fname" name="name" placeholder="Your Name">
+                            <input type="email" id="fname" name="email" placeholder="Your Email">
+                            <input type="text" id="lname" name="mobile" placeholder="Phone Number">
+
+                            <textarea name="message" id="" cols="20" rows="5"></textarea>
+
+                            <button class="lab-btn" type="submit"><span>Send <i class="icofont-double-right"></i></span></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- scrollToTop start here -->
+<a href="#" class="scrollToTop"><i class="icofont-rounded-up"></i></a>
+<!-- scrollToTop ending here -->
+
+@endsection
