@@ -25,4 +25,7 @@
         .goog-te-gadget {
             color: transparent !important;
         }
+        .lab-btn{
+            color: #fff !important;
+        }
     </style>

@@ -19,3 +19,4 @@
     <script src="{{ asset('frontend/assets/js/circularProgressBar.min.js') }}"></script>
     <script src="{{ asset('frontend/assets/js/hc-offcanvas-nav.js') }}"></script>
     <script src="{{ asset('frontend/assets/js/functions.j') }}s"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"></script>
