@@ -126,7 +126,6 @@
         <div class="department-wrapper">
             <div class="section-header">
                 <h2><span>Our Services </span></h2>
-
             </div>
             <div class="section-content">
                 <div class="row">
@@ -149,8 +148,6 @@
                                     <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
                                         <a class="" href="#five" role="tab" data-toggle="tab"><img style="width: 60px !important; height: 60px !important" src="https://cdn-icons-png.flaticon.com/512/3595/3595848.png" alt="depart"></a>
                                     </li>
-
-
                                 </ul>
                             </div>
                         </div>
@@ -171,7 +168,7 @@
                                                     doctors registered with us who not only provide consultation
                                                     online but also can be visited offline. Call us at the below
                                                     number for further details.</p>
-                                                <a class="lab-btn" href="./medicalVisitForm.blade.php">Submit Now
+                                                <a class="lab-btn" href="{{url('medical-visits')}}">Submit Now
                                                     <i class="fa-solid fa-chevron-right"></i>
                                                 </a>
                                             </div>
@@ -188,13 +185,11 @@
                                         <div class="col-12 col-lg-6">
                                             <div class="post-content">
                                                 <h3>Medicine Order</h3>
-                                                <p>Do you want to order some medicine and wish them to be delivered
+                                                <p> Do you want to order some medicine and wish them to be delivered
                                                     in no time at a reasonable cost from outside India? We have a
                                                     wonderful chain of delivery that ensures that your medicines
                                                     reach you on time. Call us at the below number to order
                                                     medicine.</p>
-
-
                                             </div>
                                         </div>
                                     </div>

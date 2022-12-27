@@ -18,5 +18,10 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/medical-visits', function () {
+    return view('medical_visits');
+});
+
 Route::resource('contact', ContactController::class);
-Route::get('lang/{lang}', [App\Http\Controllers\LanguageController::class, 'switchLang'])->name('lang.switch');
+ 
+// Route::get('lang/{lang}', [App\Http\Controllers\LanguageController::class, 'switchLang'])->name('lang.switch');

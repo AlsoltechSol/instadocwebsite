@@ -1,20 +1,14 @@
 @extends('main')
 @section('title',"Home")
-
-
 @section('pagestyles')
 @endsection
-
 @section('content')
-
 <Section>
-
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="heading">Request For Medical Visit</div>
             </div>
-
             <form method="POST" action="#">
                 <div class="col-md-6 mb-3">
                     <label for="FullName" class="form-label">Full Name</label>
@@ -37,7 +31,6 @@
                         <option value="3">Three</option>
                     </select>
                 </div>
-
                 <div class="col-md-12 mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label">Destination Address</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
@@ -46,7 +39,6 @@
                     <label for="exampleFormControlTextarea1" class="form-label">Reason For Travel</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
-
                 <div class="col-md-12">
                     <button class="btn btn-outline-secondary">
                         Cancel
@@ -58,7 +50,5 @@
             </form>
         </div>
     </div>
-
 </Section>
-
 @endsection
