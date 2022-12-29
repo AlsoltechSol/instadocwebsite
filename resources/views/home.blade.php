@@ -125,7 +125,7 @@
     <div class="container">
         <div class="department-wrapper">
             <div class="section-header">
-                <h2><span>Our Services </span></h2>
+                <h2><span>Our Services</span></h2>
             </div>
             <div class="section-content">
                 <div class="row">
@@ -208,8 +208,9 @@
                                                     your Lab tests done at a reasonable rate and get hassle-free
                                                     sample collection and report delivery. Call us at the below
                                                     number to book a test.</p>
-
-
+                                                <a class="lab-btn" href="{{url('labtest')}}">Submit Now
+                                                    <i class="fa-solid fa-chevron-right"></i>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -229,8 +230,9 @@
                                                     passport and cross-border travel for medical purposes. Call us
                                                     at the below number to get assistance on your medical visits.
                                                 </p>
-
-
+                                                <a class="lab-btn" href="{{url('visa')}}">Submit Now
+                                                    <i class="fa-solid fa-chevron-right"></i>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -249,8 +251,10 @@
                                                     flight. Don't bother about your lodging and fooding as we manage
                                                     that as well during your medical visits. If required we tag
                                                     along a medical attender to assist you 24*7.</p>
-
-
+                                                    
+                                                <a class="lab-btn" href="{{url('VideoConsult')}}">Submit Now
+                                                    <i class="fa-solid fa-chevron-right"></i>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
