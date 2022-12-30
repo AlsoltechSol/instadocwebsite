@@ -81,11 +81,24 @@
                                     <a href="mail-to:support@instadoctor.co">
                                         <p>support@instadoctor.co</p>
                                     </a>
-
                                 </div>
                             </div>
                         </li>
-
+                        <li class="item">
+                            <div class="item-inner">
+                                <div class="item-thumb">
+                                    <img src="assets/images/header/2.png" alt="">
+                                </div>
+                                <div class="item-content">
+                                    <span>Language :</span>
+                                    <select id="selectbox" name="" onchange="javascript:location.href = this.value;">
+                                        <option value="/en" selected>English</option>
+                                        <option value="/bn">Bengali</option>
+                                        <option value="/ni">Nepali</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
