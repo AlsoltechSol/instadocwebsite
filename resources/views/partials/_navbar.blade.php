@@ -92,7 +92,8 @@
                                 <div class="item-content">
                                     <span>Language :</span>
                                     <select id="selectbox" name="" onchange="javascript:location.href = this.value;">
-                                        <option value="/en" selected>English</option>
+                                        <option >Select Language</option>
+                                        <option value="/en">English</option>
                                         <option value="/bn">Bengali</option>
                                         <option value="/ni">Nepali</option>
                                     </select>
