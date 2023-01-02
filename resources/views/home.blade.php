@@ -22,8 +22,8 @@
 <section id="about" class="service-section style-1 padding-tb bg-color">
     <div class="container">
         <div class="section-header wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
-            <h2><span>About Us</span></h2>
-
+            <!-- <h2><span>About Us</span></h2> -->
+            <h2><span>{{__("msg.About")}}</span></h2>
         </div>
         <div class="section-wrapper">
             <div class="service-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
@@ -32,18 +32,7 @@
                         <img src="http://labartisan.net/demo/mukti/assets/images/service/01.jpg" alt="service">
                     </div>
                     <div class="service-content">
-
-                        <p>Our services help patients where distance is a critical factor. We bridge the gap and
-                            bring them in touch with the best medical facilities. Hence our services can help
-                            patients coming from distant places with facilities such as providing them with
-                            information for improved diagnosis and support for allopathic, homeopathic, and
-                            ayurvedic treatment. Our specific facilities will enable patients to acquire both online
-                            and offline consultations with our expert doctors, order medicine, request diagnostic
-                            tests, and get support with visa or passport-related matters, all ticketing inside
-                            India, pick up and drop services from the airport, train station and bus stop
-                            accommodation, medical guide and many more.
-                        </p>
-
+                        <p>{{__("msg.AboutDescription")}}</p>
                     </div>
                 </div>
             </div>
@@ -125,7 +114,7 @@
     <div class="container">
         <div class="department-wrapper">
             <div class="section-header">
-                <h2><span>Our Services </span></h2>
+                <h2><span>{{__("msg.Services")}}</span></h2>
             </div>
             <div class="section-content">
                 <div class="row">
@@ -162,12 +151,8 @@
                                         </div>
                                         <div class="col-12 col-lg-6">
                                             <div class="post-content">
-                                                <h3>Medical Consultation</h3>
-                                                <p>Are you looking to consult with trustworthy doctors and get
-                                                    medical facilities at an affordable cost? We have the best
-                                                    doctors registered with us who not only provide consultation
-                                                    online but also can be visited offline. Call us at the below
-                                                    number for further details.</p>
+                                                <h3>{{__("msg.Medical-Consultation")}}</h3>
+                                                <p>{{__("msg.MedicalDescription")}}</p>
                                                 <a class="lab-btn" href="{{url('medical-visits')}}">Submit Now
                                                     <i class="fa-solid fa-chevron-right"></i>
                                                 </a>
@@ -184,12 +169,8 @@
                                         </div>
                                         <div class="col-12 col-lg-6">
                                             <div class="post-content">
-                                                <h3>Medicine Order</h3>
-                                                <p> Do you want to order some medicine and wish them to be delivered
-                                                    in no time at a reasonable cost from outside India? We have a
-                                                    wonderful chain of delivery that ensures that your medicines
-                                                    reach you on time. Call us at the below number to order
-                                                    medicine.</p>
+                                                <h3>{{__("msg.Medical-order")}}</h3>
+                                                <p>{{__("msg.medicalOrder-description")}}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -203,11 +184,8 @@
                                         </div>
                                         <div class="col-12 col-lg-6">
                                             <div class="post-content">
-                                                <h3>Lab Test</h3>
-                                                <p>Book your lab test with our InstaDoctor registered labs. Get all
-                                                    your Lab tests done at a reasonable rate and get hassle-free
-                                                    sample collection and report delivery. Call us at the below
-                                                    number to book a test.</p>
+                                                <h3>{{__("msg.labTest")}}</h3>
+                                                <p>{{__("msg.labTest-description")}}</p>
 
 
                                             </div>
@@ -223,12 +201,8 @@
                                         </div>
                                         <div class="col-12 col-lg-6">
                                             <div class="post-content">
-                                                <h3>Visa & Passports for medical visits</h3>
-                                                <p>Our team in InstaDoctor helps you to prepare your visa
-                                                    application to get a quick medical visa. We also help with
-                                                    passport and cross-border travel for medical purposes. Call us
-                                                    at the below number to get assistance on your medical visits.
-                                                </p>
+                                                <h3>{{__("msg.Visa")}}</h3>
+                                                <p>{{__("msg.Visa-Descreiption")}}</p>
 
 
                                             </div>
@@ -244,11 +218,8 @@
                                         </div>
                                         <div class="col-12 col-lg-6">
                                             <div class="post-content">
-                                                <h3>Travel Support for medical purposes:</h3>
-                                                <p>We provide all sorts of travel assistance by bus, train, and
-                                                    flight. Don't bother about your lodging and fooding as we manage
-                                                    that as well during your medical visits. If required we tag
-                                                    along a medical attender to assist you 24*7.</p>
+                                                <h3>{{__("msg.Travel")}}</h3>
+                                                <p>{{__("msg.Travel-description")}}</p>
 
 
                                             </div>
@@ -279,7 +250,7 @@
                     </div>
                     <div class="counter-content">
                         <h3 class="number"><span class="counter">450</span></h3>
-                        <p class="post-content">number of patients served</p>
+                        <p class="post-content">{{__("msg.Counter1")}}</p>
                     </div>
                 </div>
             </div>
@@ -290,7 +261,7 @@
                     </div>
                     <div class="counter-content">
                         <h3 class="number"><span class="counter">27</span></h3>
-                        <p class="post-content">number of doctors tied up</p>
+                        <p class="post-content">{{__("msg.Counter2")}}</p>
                     </div>
                 </div>
             </div>
@@ -301,7 +272,7 @@
                     </div>
                     <div class="counter-content">
                         <h3 class="number"><span class="counter">14</span></h3>
-                        <p class="post-content">hospitals tied up</p>
+                        <p class="post-content">{{__("msg.Counter3")}}</p>
                     </div>
                 </div>
             </div>
@@ -312,7 +283,7 @@
                     </div>
                     <div class="counter-content">
                         <h3 class="number"><span class="counter">134</span></h3>
-                        <p class="post-content">medical visits for patients</p>
+                        <p class="post-content">{{__("msg.Counter4")}}</p>
                     </div>
                 </div>
             </div>
@@ -322,7 +293,7 @@
 <section id="contact" class="contact-us padding-tb">
     <div class="container">
         <div class="section-header">
-            <h2><span>Contact Us </span></h2>
+            <h2><span>{{__("msg.Contact")}}</span></h2>
 
         </div>
         <div class="section-wrapper">
@@ -362,8 +333,7 @@
                 </div>
                 <div class="col-lg-6 col-12">
                     <div class="here-form">
-                        <h4>Do you have any queries, suggestions, or requests? Insta Doctor is a chain of patient
-                            care facilities. To contact us, please fill out the form below.</h4>
+                        <h4>{{__("msg.Contact-us")}}</h4>
                         <form method="POST" action="{{ route('contact.store') }}">
                             @csrf
                             <input type="text" id="fname" name="name" placeholder="Your Name">
