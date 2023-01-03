@@ -14,7 +14,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+// Route::get('/',function($lang = 'en'){
+//     App::setLocale($lang);
+//     return view('home');
+// });
+
+Route::get('/{lang}',function($lang){
+    App::setLocale($lang);
+
     return view('home');
 });
 
