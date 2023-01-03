@@ -208,7 +208,7 @@
                                                     your Lab tests done at a reasonable rate and get hassle-free
                                                     sample collection and report delivery. Call us at the below
                                                     number to book a test.</p>
-                                                <a class="lab-btn" href="{{url('labtest')}}">Submit Now
+                                                <a class="lab-btn" href="{{url('labtestForm')}}">Submit Now
                                                     <i class="fa-solid fa-chevron-right"></i>
                                                 </a>
                                             </div>

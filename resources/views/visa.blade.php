@@ -11,28 +11,24 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="row">
-                        <div class="col-6 mb-1">
+                        <div class="col-md-6">
                             <label for="FullName" class="form-label">Full Name</label>
                             <input type="text" class="form-control" id="FullName" placeholder="Enter Full name">
                         </div>
-                        <div class="col-md-6 mb-1">
-                            <label for="Date" class="form-label">Date of Travel</label>
+                        <div class="col-md-6">
+                            <label for="Date" class="form-label">Expected Date of Travel</label>
                             <input type="date" class="form-control" id="Date" placeholder="Date of Travel">
                         </div>
-                        <div class="col-md-6 mb-1">
+                        <div class="col-md-6">
                             <label for="Dest" class="form-label">Destination Location</label>
                             <input type="text" class="form-control" id="Dest" placeholder="Enter your destination">
                         </div>
-                        <div class="col-md-6 mb-1">
+                        <div class="col-md-6">
                             <label for="country" class="form-label">Alternative Contact No.</label>
                             <input type="text" class="form-control" id="country" placeholder="Mobile number">
                         </div>
-                        <div class="col-md-12 mb-1">
-                            <label for="exampleFormControlTextarea2" class="form-label">Reason For Travel</label>
-                            <textarea class="form-control" placeholder="Add description" id="exampleFormControlTextarea2" rows="3" style="resize: none;"></textarea>
-                        </div>
 
-                        <div class="heading col-md-12">Upload Documents</div>
+                        <div class="heading col-md-12 ml-3">Upload Documents</div>
 
                         <div class="col-md-6 mb-3">
                             <label class="form-label" for="inputGroupFile01">Age Proof <span class="badge badge-danger">* (Birth Certificate)</span></label>

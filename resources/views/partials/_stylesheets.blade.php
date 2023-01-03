@@ -66,7 +66,80 @@
         color: #000;
     }
 
+    .contact-us .contact-wrap .contact-title,
+    .widget,
+    .comment-respond,
+    .comments,
+    .blog-section .main-blog .blog-wrapper .post-item .post-item-inner .post-content blockquote,
+    .blog-section .main-blog .blog-wrapper .post-item .post-item-inner .post-content p,
+    .blog-section .main-blog .blog-wrapper .post-item .post-item-inner,
+    .section-header,
+    .fore-zero .section-wrapper .zero-item .zero-content p,
+    .shop-single .review .review-content .review-showing .client-review .review-form form .rating,
+    .shop-single .review .review-content .review-showing .content,
+    .shop-page .shop-product-wrap .product-item,
+    .shop-page .shop-product-wrap .product-list-item,
+    .shop-page .shop-title,
+    .shop-cart .section-wrapper .cart-bottom .shiping-box .calculate-shiping h3,
+    .contact-us .section-wrapper .here-form h3,
+    .certificat-section .certificate-content p,
+    .blog-section .main-blog .blog-wrapper .service-item .service-item-inner,
+    .appointment-section.style-1 .section-wrapper .appointment-right form select,
+    .appointment-section.style-1 .section-wrapper .appointment-right .ar-title,
+    .appointment-section.style-1 .section-wrapper .appointment-left .time-info .al-title,
+    .single-sidebar .letest-product,
+    .single-sidebar .shop-widget,
+    .single-sidebar .timetable-widget,
+    .single-sidebar .popular-post-widget,
+    .single-sidebar .gellary-widget,
+    .single-sidebar .cetagory-widget,
+    .single-sidebar .department-widget,
+    .single-sidebar .search-widget,
+    .feature-item .lab-inner .lab-thumb,
+    .feature-item,
+    input,
+    textarea {
+        margin-bottom: 20px;
+    }
+
     @media only screen and (max-width: 600px) {
+
+        .contact-us .contact-wrap .contact-title,
+        .widget,
+        .comment-respond,
+        .comments,
+        .blog-section .main-blog .blog-wrapper .post-item .post-item-inner .post-content blockquote,
+        .blog-section .main-blog .blog-wrapper .post-item .post-item-inner .post-content p,
+        .blog-section .main-blog .blog-wrapper .post-item .post-item-inner,
+        .section-header,
+        .fore-zero .section-wrapper .zero-item .zero-content p,
+        .shop-single .review .review-content .review-showing .client-review .review-form form .rating,
+        .shop-single .review .review-content .review-showing .content,
+        .shop-page .shop-product-wrap .product-item,
+        .shop-page .shop-product-wrap .product-list-item,
+        .shop-page .shop-title,
+        .shop-cart .section-wrapper .cart-bottom .shiping-box .calculate-shiping h3,
+        .contact-us .section-wrapper .here-form h3,
+        .certificat-section .certificate-content p,
+        .blog-section .main-blog .blog-wrapper .service-item .service-item-inner,
+        .appointment-section.style-1 .section-wrapper .appointment-right form select,
+        .appointment-section.style-1 .section-wrapper .appointment-right .ar-title,
+        .appointment-section.style-1 .section-wrapper .appointment-left .time-info .al-title,
+        .single-sidebar .letest-product,
+        .single-sidebar .shop-widget,
+        .single-sidebar .timetable-widget,
+        .single-sidebar .popular-post-widget,
+        .single-sidebar .gellary-widget,
+        .single-sidebar .cetagory-widget,
+        .single-sidebar .department-widget,
+        .single-sidebar .search-widget,
+        .feature-item .lab-inner .lab-thumb,
+        .feature-item,
+        input,
+        textarea {
+            margin-bottom: 30px;
+        }
+
         #medicalVisit .container {
             width: 100%;
             padding-right: 15px;
@@ -282,5 +355,15 @@
         top: 2px;
         right: 2px;
         z-index: 1;
+    }
+
+
+    /* video Conslut */
+    .doc {
+        display: flex;
+    }
+
+    .doc-pic {
+        width: 81px;
     }
 </style>

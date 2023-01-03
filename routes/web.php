@@ -22,9 +22,6 @@ Route::get('/medical-visits', function () {
     return view('medical_visits');
 });
 
-Route::get('/labtest', function () {
-    return view('labtest');
-});
 Route::get('/visa', function () {
     return view('visa');
 });
