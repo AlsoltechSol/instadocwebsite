@@ -153,7 +153,7 @@
                                             <div class="post-content">
                                                 <h3>{{__("msg.Medical-Consultation")}}</h3>
                                                 <p>{{__("msg.MedicalDescription")}}</p>
-                                                <a class="lab-btn" href="{{url('medical-visits')}}">Submit Now
+                                                <a class="lab-btn" href="{{url('medical-visits/en')}}">Submit Now
                                                     <i class="fa-solid fa-chevron-right"></i>
                                                 </a>
                                             </div>
@@ -186,6 +186,9 @@
                                             <div class="post-content">
                                                 <h3>{{__("msg.labTest")}}</h3>
                                                 <p>{{__("msg.labTest-description")}}</p>
+                                                <a class="lab-btn" href="{{url('labtestForm/en')}}">Submit Now
+                                                    <i class="fa-solid fa-chevron-right"></i>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -201,6 +204,9 @@
                                             <div class="post-content">
                                                 <h3>{{__("msg.Visa")}}</h3>
                                                 <p>{{__("msg.Visa-Descreiption")}}</p>
+                                                <a class="lab-btn" href="{{url('visa/en')}}">Submit Now
+                                                    <i class="fa-solid fa-chevron-right"></i>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
