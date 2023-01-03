@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/{lang}',function($lang){
     App::setLocale($lang);
+
     return view('home');
 });
 

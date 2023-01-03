@@ -1,4 +1,6 @@
-    <!-- ========== Mobile-nav section start here ========== -->
+
+
+<!-- ========== Mobile-nav section start here ========== -->
     <div class="mobile-menu">
         <div class="container">
             <div class="mobile-menu-wrapper">
@@ -90,12 +92,17 @@
                                     <img src="assets/images/header/2.png" alt="">
                                 </div>
                                 <div class="item-content">
-                                    <span>Language :</span>
-                                    <select id="selectbox" name="" onchange="javascript:location.href = this.value;">
-                                        <option value="/en" selected>English</option>
+                                    <span>Language :</span><br>
+                                    <select id="selectbox" name="" id="lanSelect" onchange="javascript:location.href = this.value;">
+                                        <option value="/en">English</option>
                                         <option value="/bn">Bengali</option>
                                         <option value="/ni">Nepali</option>
                                     </select>
+                                    <!-- <select id="selectbox" name="" onchange="javascript:location.href = this.value;">
+                                        <option value="/en" <?php if(url()->full() == "http://127.0.0.1:8000/en"){echo "selected";}else{echo "";} ?>>English</option>
+                                        <option value="/bn" <?php if(url()->full() == "http://127.0.0.1:8000/bn"){echo "selected";}else{echo "";} ?>>Bengali</option>
+                                        <option value="/ni" <?php if(url()->full() == "http://127.0.0.1:8000/ni"){echo "selected";}else{echo "";} ?>>Nepali</option>
+                                    </select> -->
                                 </div>
                             </div>
                         </li>
