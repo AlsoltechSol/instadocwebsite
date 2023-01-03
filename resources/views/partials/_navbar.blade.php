@@ -92,8 +92,11 @@
                                     <img src="assets/images/header/2.png" alt="">
                                 </div>
                                 <div class="item-content">
+
                                     <span>Language :</span><br>
                                     <select id="selectbox" name="" id="lanSelect" onchange="javascript:location.href = this.value;">
+                           
+                                        <option >Select Language</option>
                                         <option value="/en">English</option>
                                         <option value="/bn">Bengali</option>
                                         <option value="/ni">Nepali</option>
