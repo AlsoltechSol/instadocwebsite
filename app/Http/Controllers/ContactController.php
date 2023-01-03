@@ -46,7 +46,7 @@ class ContactController extends Controller
 
         Contact::create($data);
 
-        return back()->with('message', 'Form submited succesully');
+        return redirect('/'.'#contact')->with('success', 'Form Submited Succesully!');
     }
 
     /**
