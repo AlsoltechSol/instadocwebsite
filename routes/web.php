@@ -29,6 +29,19 @@ Route::get('/medical-visits', function () {
     return view('medical_visits');
 });
 
+Route::get('/visa', function () {
+    return view('visa');
+});
+Route::get('/labtestResult', function () {
+    return view('labtestResult');
+});
+Route::get('/labtestForm', function () {
+    return view('labtestForm');
+});
+Route::get('/VideoConsult', function () {
+    return view('VideoConsult');
+});
+
 Route::resource('contact', ContactController::class);
  
 // Route::get('lang/{lang}', [App\Http\Controllers\LanguageController::class, 'switchLang'])->name('lang.switch');

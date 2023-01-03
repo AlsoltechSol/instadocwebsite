@@ -186,8 +186,6 @@
                                             <div class="post-content">
                                                 <h3>{{__("msg.labTest")}}</h3>
                                                 <p>{{__("msg.labTest-description")}}</p>
-
-
                                             </div>
                                         </div>
                                     </div>
@@ -203,8 +201,6 @@
                                             <div class="post-content">
                                                 <h3>{{__("msg.Visa")}}</h3>
                                                 <p>{{__("msg.Visa-Descreiption")}}</p>
-
-
                                             </div>
                                         </div>
                                     </div>
@@ -220,8 +216,6 @@
                                             <div class="post-content">
                                                 <h3>{{__("msg.Travel")}}</h3>
                                                 <p>{{__("msg.Travel-description")}}</p>
-
-
                                             </div>
                                         </div>
                                     </div>
