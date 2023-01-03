@@ -94,18 +94,18 @@
                                 <div class="item-content">
 
                                     <span>Language :</span><br>
-                                    <select id="selectbox" name="" id="lanSelect" onchange="javascript:location.href = this.value;">
+                                    {{-- <select id="selectbox" name="" id="lanSelect" onchange="javascript:location.href = this.value;">
                            
                                         <option >Select Language</option>
                                         <option value="/en">English</option>
                                         <option value="/bn">Bengali</option>
                                         <option value="/ni">Nepali</option>
-                                    </select>
-                                    <!-- <select id="selectbox" name="" onchange="javascript:location.href = this.value;">
+                                    </select> --}}
+                                    <select id="selectbox" name="" onchange="javascript:location.href = this.value;">
                                         <option value="/en" <?php if(url()->full() == "http://127.0.0.1:8000/en"){echo "selected";}else{echo "";} ?>>English</option>
                                         <option value="/bn" <?php if(url()->full() == "http://127.0.0.1:8000/bn"){echo "selected";}else{echo "";} ?>>Bengali</option>
                                         <option value="/ni" <?php if(url()->full() == "http://127.0.0.1:8000/ni"){echo "selected";}else{echo "";} ?>>Nepali</option>
-                                    </select> -->
+                                    </select>
                                 </div>
                             </div>
                         </li>
