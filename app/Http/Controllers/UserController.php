@@ -8,7 +8,45 @@ use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
-    public function sendOtp(Request $request){
+    public function patientLogin(Request $request){
+        // dd($request);
+        return 'hi';
+        
+        $mobile = $request->mobile;
+        $otp = 1000;
+        // if($mobile='7980222011'){
+        //     $otp=1010;
+        // }
+        $user = User::where('mobile', $request->mobile)->first();
+        $request->session()->put('mobile', $mobile);
+        $sms = 0;
+
+        if ($user) {
+            $user->otp = $otp;
+            $user->save();
+            $request->session()->put('otp', $user->otp);
+            $sms = 1;
+        } else {
+            $user = new User();
+            $user->mobile = $request->mobile;
+            $user->role = 'patient';
+            $user->name = $request->name;
+            $user->otp = $otp;
+
+            return $user;
+            $user->save();
+            $request->session()->put('otp', $otp);
+            $sms = 1;
+        }
+
+        // if ($sms == 1) {
+        //     return redirect('/verify-otp');
+        // }
+
+           
+    }
+
+    public function doctorLogin(Request $request){
         // dd($request);
         
         $mobile = $request->mobile;
@@ -28,6 +66,7 @@ class UserController extends Controller
         } else {
             $user = new User();
             $user->mobile = $request->mobile;
+            $user->role = 'doctor';
             $user->name = $request->name;
             $user->otp = $otp;
             $user->save();
@@ -35,14 +74,13 @@ class UserController extends Controller
             $sms = 1;
         }
 
-        if ($sms == 1) {
-            return redirect('/verify-otp');
-        }
-           
- 
- 
+        // if ($sms == 1) {
+        //     return redirect('/verify-otp');
+        // }
+
            
     }
+     
      
  
      public function checkOtp(Request $request){
