@@ -176,16 +176,23 @@
 
                             <!-- Tab1 -->
                             <div id="login" class="container tab-pane active">
-                                <label for="inputEmail" class="sr-only">Mobile Number</label>
-                                <input type="number" id="inputEmail" class="form-control mb-4" placeholder="Mobile Number" required autofocus>
-                                <button class="btn btn-lg btn-dark btn-block" type="submit">Paitent Login</button>
+                                <form action="{{route('patient.login')}}" method="POST">
+                                    @csrf
+                                    <label for="inputEmail" class="sr-only">Mobile Number</label>
+                                    <input name="mobile" type="number" id="inputEmail" class="form-control mb-4" placeholder="Mobile Number" required autofocus>
+                                    <button class="btn btn-lg btn-dark btn-block" type="submit">Paitent Login</button>
+                                </form>
+                              
                             </div>
 
                             <!-- Tab2 -->
                             <div id="register" class="container tab-pane fade">
-                                <label for="inputEmail" class="sr-only">Mobile Number</label>
-                                <input type="number" id="inputEmail" class="form-control mb-4" placeholder="Mobile Number" required autofocus>
-                                <button class="btn btn-lg btn-dark btn-block" type="submit">Doctor Login</button>
+                                <form action="{{route('doctor.login')}}" method="POST">
+                                    @csrf
+                                    <label for="inputEmail" class="sr-only">Mobile Number</label>
+                                    <input name="mobile" type="number" id="inputEmail" class="form-control mb-4" placeholder="Mobile Number" required autofocus>
+                                    <button class="btn btn-lg btn-dark btn-block" type="submit">Doctor Login</button>
+                                </form>
                             </div>
                         </div>
 

@@ -47,5 +47,11 @@ Route::post('/visa', [App\Http\Controllers\RequestController::class, 'visa'])->n
 Route::post('/lab-test', [App\Http\Controllers\RequestController::class, 'labTest'])->name('lab.test');
 
 Route::resource('contact', ContactController::class);
+
+// patient-login
+Route::post('/patient-login', [App\Http\Controllers\UserController::class, 'patientLogin'])->name('patient.login');
+
+// doctor-login
+Route::post('/doctor-login', [App\Http\Controllers\UserController::class, 'doctorLogin'])->name('doctor.login');
  
 // Route::get('lang/{lang}', [App\Http\Controllers\LanguageController::class, 'switchLang'])->name('lang.switch');
