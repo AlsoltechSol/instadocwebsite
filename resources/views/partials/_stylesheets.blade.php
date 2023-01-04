@@ -18,6 +18,23 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
+    /* Navbar */
+    .btn-group-nav {
+        display: flex;
+        flex-direction: row;
+        border-radius: 20px;
+        width: 100%;
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+
+    .btn-group-nav #paitent_btn{
+        width: 48%;
+    }
+    .btn-group-nav #doc_btn{
+        width: 48%;
+    }
+
     .header-top {
         padding: 10px 0 !important;
     }
@@ -365,5 +382,80 @@
 
     .doc-pic {
         width: 81px;
+    }
+
+    .headLeft {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .headRight {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .headLeft h1 {
+        font-size: 40px;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        line-height: 45px;
+    }
+
+    .headLeft h3 {
+        color: #333;
+        font-size: 24px;
+        font-weight: 500;
+        font-family: "Poppins", sans-serif;
+        margin-bottom: 20px;
+    }
+
+    .headLeft .doc {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .headLeft .doc h4 {
+        margin-left: 15px;
+    }
+
+    /* Btn */
+    @media (min-width: 576px) {
+        .modal-dialog {
+            max-width: 400px;
+        }
+
+        .modal-dialog .modal-content {
+            padding: 1rem;
+        }
+    }
+
+    .modal-header .close {
+        margin-top: -1.5rem;
+    }
+
+    .form-title {
+        margin: -2rem 0rem 2rem;
+    }
+
+    .btn-round {
+        border-radius: 3rem;
+    }
+
+    .delimiter {
+        padding: 1rem;
+    }
+
+    .social-buttons .btn {
+        margin: 0 0.5rem 1rem;
+    }
+
+    .signup-section {
+        padding: 0.3rem 0rem;
     }
 </style>
