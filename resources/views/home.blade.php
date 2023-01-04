@@ -245,12 +245,17 @@
                                                         alt="depart">
                                                 </div>
                                             </div>
-                                            <div class="col-12 col-lg-6">
-                                                <div class="post-content">
-                                                    <h3>{{ __('msg.Travel') }}</h3>
-                                                    <p>{{ __('msg.Travel-description') }}</p>
-                                                </div>
-                                            </div>
+
+                                        </div>
+                                        <div class="col-12 col-lg-6">
+                                            <div class="post-content">
+                                                <h3>{{__("msg.Travel")}}</h3>
+                                                <p>{{__("msg.Travel-description")}}</p>
+                                                <a class="lab-btn" href="{{url('/VideoConsult/en')}}">Submit Now
+                                                    <i class="fa-solid fa-chevron-right"></i>
+                                                </a>
+
+                                          
                                         </div>
                                     </div>
 

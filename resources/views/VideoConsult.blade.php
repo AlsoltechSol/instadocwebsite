@@ -10,12 +10,11 @@
 
 @section('content')
 
-<Section id="VideoConsult">
-    <div class="container-fluid mt-0">
-        <div class="row" style="background-color: #C8EEF7;">
-            <div class="col-md-6">
-                <h1>Just Stay Home!</h1>
-                <h2>Request Medical advice online</h2>
+<Section id="VideoConsult" style="background-color: #C8EEF7;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 headLeft">
+                <h1>Just Stay Home & Request Medical Advice Online</h1>
                 <h3>Get your consultation at just ₹ 400</h3>
                 <div class="doc">
                     <img src={{ asset('doctors.png') }} class="doc-pic">
@@ -25,8 +24,15 @@
                     <i class="fa fa-chevron-right"></i>
                 </button>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 headRight">
                 <img src={{ asset('vdoConsultHome.png') }}>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+
             </div>
         </div>
     </div>
