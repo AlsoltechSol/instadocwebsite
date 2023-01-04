@@ -1,43 +1,46 @@
 @extends('main')
-@section('title',"Home")
+@section('title', 'Home')
 
 @section('content')
-<section class="banner-section" style="background-image: url('http://labartisan.net/demo/mukti/assets/images/banner/1.jpg');">
-    <div class="container">
-        <div class="banner-wrapper">
-            <div class="banner-content">
-                <h2 class="wow fadeInDown" data-wow-duration="2s" data-wow-delay=".1s">Get Best Medical
-                    Consultations
-                </h2>
-                <h1 class="wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".1s"><b>Medicine Order</b> And Help On Your Medical Visits...</h1>
 
-            </div>
-        </div>
-    </div>
-</section>
-<!-- ==========Banner Section Ends Here========== -->
+    <section class="banner-section"
+        style="background-image: url('http://labartisan.net/demo/mukti/assets/images/banner/1.jpg');">
+        <div class="container">
+            <div class="banner-wrapper">
+                <div class="banner-content">
+                    <h2 class="wow fadeInDown" data-wow-duration="2s" data-wow-delay=".1s">Get Best Medical
+                        Consultations
+                    </h2>
+                    <h1 class="wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".1s"><b>Medicine Order</b> And Help On
+                        Your Medical Visits...</h1>
 
-
-<!-- ==========Feature Section Start Here========== -->
-<section id="about" class="service-section style-1 padding-tb bg-color">
-    <div class="container">
-        <div class="section-header wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
-            <!-- <h2><span>About Us</span></h2> -->
-            <h2><span>{{__("msg.About")}}</span></h2>
-        </div>
-        <div class="section-wrapper">
-            <div class="service-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
-                <div class="service-inner">
-                    <div class="service-thumb">
-                        <img src="http://labartisan.net/demo/mukti/assets/images/service/01.jpg" alt="service">
-                    </div>
-                    <div class="service-content">
-                        <p>{{__("msg.AboutDescription")}}</p>
-                    </div>
                 </div>
             </div>
         </div>
-        {{--
+    </section>
+    <!-- ==========Banner Section Ends Here========== -->
+
+
+    <!-- ==========Feature Section Start Here========== -->
+    <section id="about" class="service-section style-1 padding-tb bg-color">
+        <div class="container">
+            <div class="section-header wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+                <!-- <h2><span>About Us</span></h2> -->
+                <h2><span>{{ __('msg.About') }}</span></h2>
+            </div>
+            <div class="section-wrapper">
+                <div class="service-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+                    <div class="service-inner">
+                        <div class="service-thumb">
+                            <img src="http://labartisan.net/demo/mukti/assets/images/service/01.jpg" alt="service">
+                        </div>
+                        <div class="service-content">
+                            <p>{{ __('msg.AboutDescription') }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{--
             <div class="container">
                 <div class="feature-section-wrapper">
                     <div class="section-header wow fadeInUp" data-wow-delay="" data-wow-duration="1s">
@@ -103,120 +106,146 @@
             </div> --}}
 
 
-    </div>
-</section>
+        </div>
+    </section>
 
-<!-- ==========Feature Section Ends Here========== -->
+    <!-- ==========Feature Section Ends Here========== -->
 
 
-<!-- ==========Department Section Start Here========== -->
-<section id="services" class="department-section padding-tb style-1">
-    <div class="container">
-        <div class="department-wrapper">
-            <div class="section-header">
-                <h2><span>{{__("msg.Services")}}</span></h2>
-            </div>
-            <div class="section-content">
-                <div class="row">
-                    <div class="col-12 col-xl-12">
-                        <div class="">
-                            <div class="department-top">
-                                <ul class="nav dep-tab" role="tablist">
-                                    <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
-                                        <a class="active" href="#one" role="tab" data-toggle="tab"><img style="width: 60px !important; height: 60px !important" src="https://cdn-icons-png.flaticon.com/512/5996/5996051.png" alt="depart"></a>
-                                    </li>
-                                    <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
-                                        <a class="" href="#two" role="tab" data-toggle="tab"><img src="http://labartisan.net/demo/mukti/assets/images/depart/icon/01.png" alt="depart"></a>
-                                    </li>
-                                    <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-                                        <a class="" href="#three" role="tab" data-toggle="tab"><img src="http://labartisan.net/demo/mukti/assets/images/depart/icon/07.png" alt="depart"></a>
-                                    </li>
-                                    <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
-                                        <a class="" href="#four" role="tab" data-toggle="tab"><img style="width: 60px !important; height: 60px !important" src="https://cdn-icons-png.flaticon.com/512/196/196578.png" alt="depart"></a>
-                                    </li>
-                                    <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
-                                        <a class="" href="#five" role="tab" data-toggle="tab"><img style="width: 60px !important; height: 60px !important" src="https://cdn-icons-png.flaticon.com/512/3595/3595848.png" alt="depart"></a>
-                                    </li>
-                                </ul>
+    <!-- ==========Department Section Start Here========== -->
+    <section id="services" class="department-section padding-tb style-1">
+        <div class="container">
+            <div class="department-wrapper">
+                <div class="section-header">
+                    <h2><span>{{ __('msg.Services') }}</span></h2>
+                </div>
+                <div class="section-content">
+                    <div class="row">
+
+                        <div class="col-12 col-xl-12">
+                            <div class="">
+                                <div class="department-top">
+                                    <ul class="nav dep-tab" role="tablist">
+                                        <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+                                            <a class="active" href="#one" role="tab" data-toggle="tab"><img
+                                                    style="width: 60px !important; height: 60px !important"
+                                                    src="https://cdn-icons-png.flaticon.com/512/5996/5996051.png"
+                                                    alt="depart"></a>
+                                        </li>
+                                        <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+                                            <a class="" href="#two" role="tab" data-toggle="tab"><img
+                                                    src="http://labartisan.net/demo/mukti/assets/images/depart/icon/01.png"
+                                                    alt="depart"></a>
+                                        </li>
+                                        <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                                            <a class="" href="#three" role="tab" data-toggle="tab"><img
+                                                    src="http://labartisan.net/demo/mukti/assets/images/depart/icon/07.png"
+                                                    alt="depart"></a>
+                                        </li>
+                                        <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+                                            <a class="" href="#four" role="tab" data-toggle="tab"><img
+                                                    style="width: 60px !important; height: 60px !important"
+                                                    src="https://cdn-icons-png.flaticon.com/512/196/196578.png"
+                                                    alt="depart"></a>
+                                        </li>
+                                        <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+                                            <a class="" href="#five" role="tab" data-toggle="tab"><img
+                                                    style="width: 60px !important; height: 60px !important"
+                                                    src="https://cdn-icons-png.flaticon.com/512/3595/3595848.png"
+                                                    alt="depart"></a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="department-bottom wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
-                            <div class="tab-content">
-                                <div role="tabpanel" class="tab-pane fade in active" id="one">
-                                    <div class="row flex-row-reverse align-items-center">
-                                        <div class="col-12 col-lg-6">
-                                            <div class="post-thumb">
-                                                <img style="height: 350px !important; width:560px !important" src="https://images.pexels.com/photos/4225920/pexels-photo-4225920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="depart">
+                            <div class="department-bottom wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane fade in active" id="one">
+                                        <div class="row flex-row-reverse align-items-center">
+                                            <div class="col-12 col-lg-6">
+                                                <div class="post-thumb">
+                                                    <img style="height: 350px !important; width:560px !important"
+                                                        src="https://images.pexels.com/photos/4225920/pexels-photo-4225920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                                        alt="depart">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-12 col-lg-6">
-                                            <div class="post-content">
-                                                <h3>{{__("msg.Medical-Consultation")}}</h3>
-                                                <p>{{__("msg.MedicalDescription")}}</p>
-                                                <a class="lab-btn" href="{{url('medical-visits/en')}}">Submit Now
-                                                    <i class="fa-solid fa-chevron-right"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div role="tabpanel" class="tab-pane fade in" id="two">
-                                    <div class="row flex-row-reverse align-items-center">
-                                        <div class="col-12 col-lg-6">
-                                            <div class="post-thumb">
-                                                <img style="height: 350px !important; width:560px !important" src="https://images.pexels.com/photos/139398/thermometer-headache-pain-pills-139398.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="depart">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-lg-6">
-                                            <div class="post-content">
-                                                <h3>{{__("msg.Medical-order")}}</h3>
-                                                <p>{{__("msg.medicalOrder-description")}}</p>
+                                            <div class="col-12 col-lg-6">
+                                                <div class="post-content">
+                                                    <h3>{{ __('msg.Medical-Consultation') }}</h3>
+                                                    <p>{{ __('msg.MedicalDescription') }}</p>
+                                                    <a class="lab-btn" href="{{ url('medical-visits/en') }}">Submit Now
+                                                        <i class="fa-solid fa-chevron-right"></i>
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div role="tabpanel" class="tab-pane fade in" id="three">
-                                    <div class="row flex-row-reverse align-items-center">
-                                        <div class="col-12 col-lg-6">
-                                            <div class="post-thumb">
-                                                <img style="height: 350px !important; width:560px !important" src="https://images.pexels.com/photos/2280571/pexels-photo-2280571.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="depart">
+                                    <div role="tabpanel" class="tab-pane fade in" id="two">
+                                        <div class="row flex-row-reverse align-items-center">
+                                            <div class="col-12 col-lg-6">
+                                                <div class="post-thumb">
+                                                    <img style="height: 350px !important; width:560px !important"
+                                                        src="https://images.pexels.com/photos/139398/thermometer-headache-pain-pills-139398.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                                        alt="depart">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-12 col-lg-6">
-                                            <div class="post-content">
-                                                <h3>{{__("msg.labTest")}}</h3>
-                                                <p>{{__("msg.labTest-description")}}</p>
-                                                <a class="lab-btn" href="{{url('labtestForm/en')}}">Submit Now
-                                                    <i class="fa-solid fa-chevron-right"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div role="tabpanel" class="tab-pane fade in" id="four">
-                                    <div class="row flex-row-reverse align-items-center">
-                                        <div class="col-12 col-lg-6">
-                                            <div class="post-thumb">
-                                                <img style="height: 350px !important; width:560px !important" src="https://images.pexels.com/photos/346798/pexels-photo-346798.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="depart">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-lg-6">
-                                            <div class="post-content">
-                                                <h3>{{__("msg.Visa")}}</h3>
-                                                <p>{{__("msg.Visa-Descreiption")}}</p>
-                                                <a class="lab-btn" href="{{url('visa/en')}}">Submit Now
-                                                    <i class="fa-solid fa-chevron-right"></i>
-                                                </a>
+                                            <div class="col-12 col-lg-6">
+                                                <div class="post-content">
+                                                    <h3>{{ __('msg.Medical-order') }}</h3>
+                                                    <p>{{ __('msg.medicalOrder-description') }}</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div role="tabpanel" class="tab-pane fade in" id="five">
-                                    <div class="row flex-row-reverse align-items-center">
-                                        <div class="col-12 col-lg-6">
-                                            <div class="post-thumb">
-                                                <img style="height: 350px !important; width:560px !important" src="https://images.pexels.com/photos/7659567/pexels-photo-7659567.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="depart">
+                                    <div role="tabpanel" class="tab-pane fade in" id="three">
+                                        <div class="row flex-row-reverse align-items-center">
+                                            <div class="col-12 col-lg-6">
+                                                <div class="post-thumb">
+                                                    <img style="height: 350px !important; width:560px !important"
+                                                        src="https://images.pexels.com/photos/2280571/pexels-photo-2280571.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                                        alt="depart">
+                                                </div>
                                             </div>
+                                            <div class="col-12 col-lg-6">
+                                                <div class="post-content">
+                                                    <h3>{{ __('msg.labTest') }}</h3>
+                                                    <p>{{ __('msg.labTest-description') }}</p>
+                                                    <a class="lab-btn" href="{{ url('labtestForm/en') }}">Submit Now
+                                                        <i class="fa-solid fa-chevron-right"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade in" id="four">
+                                        <div class="row flex-row-reverse align-items-center">
+                                            <div class="col-12 col-lg-6">
+                                                <div class="post-thumb">
+                                                    <img style="height: 350px !important; width:560px !important"
+                                                        src="https://images.pexels.com/photos/346798/pexels-photo-346798.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                                        alt="depart">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6">
+                                                <div class="post-content">
+                                                    <h3>{{ __('msg.Visa') }}</h3>
+                                                    <p>{{ __('msg.Visa-Descreiption') }}</p>
+                                                    <a class="lab-btn" href="{{ url('visa/en') }}">Submit Now
+                                                        <i class="fa-solid fa-chevron-right"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade in" id="five">
+                                        <div class="row flex-row-reverse align-items-center">
+                                            <div class="col-12 col-lg-6">
+                                                <div class="post-thumb">
+                                                    <img style="height: 350px !important; width:560px !important"
+                                                        src="https://images.pexels.com/photos/7659567/pexels-photo-7659567.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                                        alt="depart">
+                                                </div>
+                                            </div>
+
                                         </div>
                                         <div class="col-12 col-lg-6">
                                             <div class="post-content">
@@ -225,137 +254,147 @@
                                                 <a class="lab-btn" href="{{url('/VideoConsult/en')}}">Submit Now
                                                     <i class="fa-solid fa-chevron-right"></i>
                                                 </a>
-                                            </div>
+
+                                          
                                         </div>
                                     </div>
+
+
                                 </div>
-
-
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<!-- ==========Department Section Ends Here========== -->
+    </section>
+    <!-- ==========Department Section Ends Here========== -->
 
 
-<!-- ==========Counter Section Start Here========== -->
-<div class="counter-section style-1 padding-60">
-    <div class="container">
-        <div class="section-wrapper">
-            <div class="counter-item wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".1s">
-                <div class="counter-item-inner">
-                    <div class="counter-thumb">
-                        <img src="http://labartisan.net/demo/mukti/assets/images/counter/01.png" alt="counter">
-                    </div>
-                    <div class="counter-content">
-                        <h3 class="number"><span class="counter">450</span></h3>
-                        <p class="post-content">{{__("msg.Counter1")}}</p>
+    <!-- ==========Counter Section Start Here========== -->
+    <div class="counter-section style-1 padding-60">
+        <div class="container">
+            <div class="section-wrapper">
+                <div class="counter-item wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".1s">
+                    <div class="counter-item-inner">
+                        <div class="counter-thumb">
+                            <img src="http://labartisan.net/demo/mukti/assets/images/counter/01.png" alt="counter">
+                        </div>
+                        <div class="counter-content">
+                            <h3 class="number"><span class="counter">450</span></h3>
+                            <p class="post-content">{{ __('msg.Counter1') }}</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="counter-item wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".2s">
-                <div class="counter-item-inner">
-                    <div class="counter-thumb">
-                        <img src="http://labartisan.net/demo/mukti/assets/images/counter/02.png" alt="counter">
-                    </div>
-                    <div class="counter-content">
-                        <h3 class="number"><span class="counter">27</span></h3>
-                        <p class="post-content">{{__("msg.Counter2")}}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="counter-item wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">
-                <div class="counter-item-inner">
-                    <div class="counter-thumb">
-                        <img style="height: 60px !important; width:47px !important" src="http://labartisan.net/demo/mukti/assets/images/counter/03.png" alt="counter">
-                    </div>
-                    <div class="counter-content">
-                        <h3 class="number"><span class="counter">14</span></h3>
-                        <p class="post-content">{{__("msg.Counter3")}}</p>
+                <div class="counter-item wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".2s">
+                    <div class="counter-item-inner">
+                        <div class="counter-thumb">
+                            <img src="http://labartisan.net/demo/mukti/assets/images/counter/02.png" alt="counter">
+                        </div>
+                        <div class="counter-content">
+                            <h3 class="number"><span class="counter">27</span></h3>
+                            <p class="post-content">{{ __('msg.Counter2') }}</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="counter-item wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">
-                <div class="counter-item-inner">
-                    <div class="counter-thumb">
-                        <img src="http://labartisan.net/demo/mukti/assets/images/counter/04.png" alt="counter">
-                    </div>
-                    <div class="counter-content">
-                        <h3 class="number"><span class="counter">134</span></h3>
-                        <p class="post-content">{{__("msg.Counter4")}}</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<section id="contact" class="contact-us padding-tb">
-    <div class="container">
-        <div class="section-header">
-            <h2><span>{{__("msg.Contact")}}</span></h2>
-
-        </div>
-        <div class="section-wrapper">
-            <div class="row">
-                <div class="col-lg-6 col-12">
-                    <div class="contact-info">
-                        <h3>Contact Information</h3>
-                        <ul>
-                            <li>
-                                <h6>Office Address:</h6>
-                                <p>Biman Saha
-                                    C/o- Pradhan Mantri Bhartiya Janaushadhi Kendra
-                                    Near Madarihat Rural Hospital entry gate
-                                    Vill- Aswaninagar 2 no. Ward
-                                    P.O+P.S- Madarihat
-                                    Dist -Alipurduar
-                                    West Bengal- 735220
-                                </p>
-                            </li>
-                            <li>
-                                <h6>Phone Number:</h6>
-                                <p>7865958508</p>
-
-                            </li>
-                            <li>
-                                <h6>Whatsapp:</h6>
-                                <p>8509648067</p>
-
-                            </li>
-                            <li>
-                                <h6>Email Address:</h6>
-                                <a href="#">support@instadoctor.co</a>
-                            </li>
-
-                        </ul>
+                <div class="counter-item wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">
+                    <div class="counter-item-inner">
+                        <div class="counter-thumb">
+                            <img style="height: 60px !important; width:47px !important"
+                                src="http://labartisan.net/demo/mukti/assets/images/counter/03.png" alt="counter">
+                        </div>
+                        <div class="counter-content">
+                            <h3 class="number"><span class="counter">14</span></h3>
+                            <p class="post-content">{{ __('msg.Counter3') }}</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-12">
-                    <div class="here-form">
-                        <h4>{{__("msg.Contact-us")}}</h4>
-                        <form method="POST" action="{{ route('contact.store') }}">
-                            @csrf
-                            <input type="text" id="fname" name="name" placeholder="Your Name">
-                            <input type="email" id="fname" name="email" placeholder="Your Email">
-                            <input type="text" id="lname" name="mobile" placeholder="Phone Number">
-
-                            <textarea name="message" id="" cols="20" rows="5"></textarea>
-
-                            <button class="lab-btn" type="submit"><span>Send <i class="icofont-double-right"></i></span></button>
-                        </form>
+                <div class="counter-item wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">
+                    <div class="counter-item-inner">
+                        <div class="counter-thumb">
+                            <img src="http://labartisan.net/demo/mukti/assets/images/counter/04.png" alt="counter">
+                        </div>
+                        <div class="counter-content">
+                            <h3 class="number"><span class="counter">134</span></h3>
+                            <p class="post-content">{{ __('msg.Counter4') }}</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
+    <section id="contact" class="contact-us padding-tb">
 
-<!-- scrollToTop start here -->
-<a href="#" class="scrollToTop"><i class="icofont-rounded-up"></i></a>
-<!-- scrollToTop ending here -->
+        <div class="container">
+            <div class="section-header">
+                <h2><span>{{ __('msg.Contact') }}</span></h2>
+
+            </div>
+            <div class="section-wrapper">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <div class="contact-info">
+                            <h3>Contact Information</h3>
+                            <ul>
+                                <li>
+                                    <h6>Office Address:</h6>
+                                    <p>Biman Saha
+                                        C/o- Pradhan Mantri Bhartiya Janaushadhi Kendra
+                                        Near Madarihat Rural Hospital entry gate
+                                        Vill- Aswaninagar 2 no. Ward
+                                        P.O+P.S- Madarihat
+                                        Dist -Alipurduar
+                                        West Bengal- 735220
+                                    </p>
+                                </li>
+                                <li>
+                                    <h6>Phone Number:</h6>
+                                    <p>7865958508</p>
+
+                                </li>
+                                <li>
+                                    <h6>Whatsapp:</h6>
+                                    <p>8509648067</p>
+
+                                </li>
+                                <li>
+                                    <h6>Email Address:</h6>
+                                    <a href="#">support@instadoctor.co</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="here-form">
+                            <h4>{{ __('msg.Contact-us') }}</h4>
+                            <form method="POST" action="{{ route('contact.store') }}">
+                                @csrf
+                                <input type="text" id="fname" name="name" placeholder="Your Name">
+                                <input type="email" id="fname" name="email" placeholder="Your Email">
+                                <input type="text" id="lname" name="mobile" placeholder="Phone Number">
+
+                                <textarea name="message" id="" cols="20" rows="5"></textarea>
+
+                                <button class="lab-btn" type="submit"><span>Send <i
+                                            class="icofont-double-right"></i></span></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @if ($message = Session::get('success'))
+                <div class="alert alert-success alert-block">
+                    <button type="button" class="close" data-dismiss="alert">×</button>
+                    <strong>{{ $message }}</strong>
+                </div>
+            @endif
+        </div>
+
+    </section>
+
+    <!-- scrollToTop start here -->
+    <a href="#" class="scrollToTop"><i class="icofont-rounded-up"></i></a>
+    <!-- scrollToTop ending here -->
 
 @endsection
