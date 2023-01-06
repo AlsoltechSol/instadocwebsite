@@ -363,6 +363,7 @@
 
     .headLeft .doc h4 {
         margin-left: 15px;
+        margin-bottom: 0;
     }
 
     /* Btn */
@@ -500,12 +501,12 @@
 
         .carousel-control-prev {
             left: 35%;
-            top: 105%;
+            top: 100%;
         }
 
         .carousel-control-next {
             right: 35%;
-            top: 105%;
+            top: 100%;
         }
 
         .card .carousel-caption h3 {
@@ -715,7 +716,7 @@
         font-size: 20px;
         margin-top: 5px;
     }
-    
+
     .testimonials .bottom_img {
         position: absolute;
         left: 50%;
@@ -727,5 +728,86 @@
         object-position: top;
         z-index: 100;
         bottom: 25%;
+    }
+
+
+    /* Mobile Responsive */
+    @media (max-width: 576px) {
+        #VideoConsult {
+            margin-top: 30px;
+        }
+
+        #VideoConsult .hero {
+            padding: 50px 0;
+        }
+
+        .headLeft {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .headLeft h1 {
+            font-size: 24px;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+            line-height: 27px;
+            text-align: center;
+        }
+
+        .headLeft h3 {
+            color: #5f5f5f;
+            font-size: 18px;
+            font-weight: 500;
+            font-family: "Poppins", sans-serif;
+            margin-bottom: 20px;
+        }
+
+        .headLeft .doc {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .headLeft .doc h4 {
+            margin-left: 8px;
+            font-size: 16px;
+        }
+
+        .headRight img {
+            display: none;
+        }
+
+        .offer .card .carousel-caption .col-md-4 {
+            display: none;
+        }
+
+        .heading {
+            font-size: 24px;
+        }
+
+        .flex-head {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .heading span {
+            font-size: 14px;
+            color: #828282;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            display: none;
+        }
+
+        .testimonials .card .carousel-caption{
+            left: 0;
+        }
     }
 </style>
