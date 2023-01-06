@@ -41,6 +41,9 @@ Route::get('/labtestForm/{lang}', function () {
 Route::get('/VideoConsult/{lang}', function () {
     return view('VideoConsult');
 });
+Route::get('/DocConsultForm/{lang}', function () {
+    return view('DocConsultForm');
+});
 
 Route::post('/medical-visits', [App\Http\Controllers\RequestController::class, 'medicalVisits'])->name('medical.visits');
 Route::post('/visa', [App\Http\Controllers\RequestController::class, 'visa'])->name('visa');

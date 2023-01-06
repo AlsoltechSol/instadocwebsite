@@ -16,8 +16,14 @@
 <link rel="stylesheet" href="{{ asset('/frontend/assets/css/style.css') }}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
     /* Navbar */
     .btn-group-nav {
         display: flex;
@@ -28,10 +34,11 @@
         padding-top: 20px;
     }
 
-    .btn-group-nav #paitent_btn{
+    .btn-group-nav #paitent_btn {
         width: 48%;
     }
-    .btn-group-nav #doc_btn{
+
+    .btn-group-nav #doc_btn {
         width: 48%;
     }
 
@@ -192,7 +199,21 @@
         padding-left: 20px;
         margin-bottom: 25px;
         margin-top: 25px;
+        line-height: 30px;
     }
+
+    .heading span {
+        font-size: 24px;
+        color: #828282;
+    }
+
+    .flex-head {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
 
     .heading::before {
         content: "";
@@ -295,86 +316,6 @@
         padding: 1em;
     }
 
-    .responsive-calendar-placeholder {}
-
-    .responsive-calendar-modal {
-        background-color: #1d86c8;
-        color: white;
-        padding: 1em;
-    }
-
-    .responsive-calendar .controls {
-        text-align: center;
-    }
-
-    .responsive-calendar .controls a {
-        cursor: pointer;
-        color: red;
-    }
-
-    .responsive-calendar .controls h4 {
-        display: inline;
-    }
-
-    .responsive-calendar .day-headers,
-    .responsive-calendar .days {
-        font-size: 0;
-    }
-
-    .responsive-calendar .day {
-        display: inline-block;
-        position: relative;
-        font-size: 14px;
-        width: 14.285714285714286%;
-        text-align: center;
-    }
-
-    .responsive-calendar .day a {
-        color: #000000;
-        display: block;
-        cursor: pointer;
-        padding: 20% 0 20% 0;
-    }
-
-    .responsive-calendar .day a:hover {
-        background-color: #eee;
-        text-decoration: none;
-    }
-
-    .responsive-calendar .day.header {
-        border-bottom: 1px gray solid;
-    }
-
-    .responsive-calendar .day.active a {
-        background-color: #1d86c8;
-        color: #ffffff;
-    }
-
-    .responsive-calendar .day.active a:hover {
-        background-color: #36a0e2;
-    }
-
-    .responsive-calendar .day.active .not-current {
-        background-color: #8fcaef;
-        color: #ffffff;
-    }
-
-    .responsive-calendar .day.active .not-current:hover {
-        background-color: #bcdff5;
-    }
-
-    .responsive-calendar .day.not-current a {
-        color: #ddd;
-    }
-
-    .responsive-calendar .day .badge {
-        position: absolute;
-        top: 2px;
-        right: 2px;
-        z-index: 1;
-    }
-
-
     /* video Conslut */
     .doc {
         display: flex;
@@ -457,5 +398,334 @@
 
     .signup-section {
         padding: 0.3rem 0rem;
+    }
+
+
+    /* Card */
+    .card {
+        margin: 0 auto;
+        border: none;
+    }
+
+    .card .carousel-item {
+        min-height: 361px;
+    }
+
+    .offer .card .carousel-caption {
+        padding: 0;
+        right: 15px;
+        left: 15px;
+        top: 15px;
+        color: #3d3d3d;
+        border: 1px solid #ccc;
+        min-height: 346px;
+        padding: 25px;
+        border-radius: 6px;
+        background-color: #4CD4CC;
+    }
+
+    .carousel-caption h1 {
+        font-size: 22px;
+        text-align: left;
+        font-family: sans-serif;
+        line-height: 26px;
+    }
+
+    .carousel-caption .card_8 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .carousel-caption p {
+        font-size: 14px;
+        text-align: left;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+    }
+
+
+    .card .carousel-control-prev,
+    .card .carousel-control-next {
+        color: #3d3d3d !important;
+        opacity: 1 !important;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-image: none;
+        color: #000;
+        font-size: 24px;
+        background-color: transparent;
+        height: 32px;
+        line-height: 32px;
+        width: 32px;
+    }
+
+    .carousel-control-prev-icon:hover,
+    .carousel-control-next-icon:hover {
+        opacity: 0.85;
+    }
+
+    .carousel-control-prev {
+        left: -15%;
+        top: 0%;
+    }
+
+    .carousel-control-next {
+        right: -15%;
+        top: 0%;
+    }
+
+    .midline {
+        width: 60px;
+        border-top: 1px solid #d43025;
+    }
+
+    @media (min-width: 320px) and (max-width: 575px) {
+        .carousel-caption {
+            position: relative;
+        }
+
+        .card .carousel-caption {
+            left: 0;
+            top: 0;
+            margin-bottom: 15px;
+        }
+
+        .card .carousel-caption img {
+            margin: 0 auto;
+        }
+
+        .carousel-control-prev {
+            left: 35%;
+            top: 105%;
+        }
+
+        .carousel-control-next {
+            right: 35%;
+            top: 105%;
+        }
+
+        .card .carousel-caption h3 {
+            margin-top: 0;
+            font-size: 16px;
+            font-weight: 700;
+        }
+    }
+
+    @media (min-width: 576px) and (max-width: 767px) {
+        .carousel-caption {
+            position: relative;
+        }
+
+        .card .carousel-caption {
+            left: 0;
+            top: 0;
+            margin-bottom: 15px;
+        }
+
+        .card .carousel-caption img {
+            margin: 0 auto;
+        }
+
+        .card .carousel-caption h3,
+        .card .carousel-caption small {
+            text-align: center;
+        }
+
+        .carousel-control-prev {
+            left: 35%;
+            top: 105%;
+        }
+
+        .carousel-control-next {
+            right: 35%;
+            top: 105%;
+        }
+    }
+
+    @media (min-width: 767px) and (max-width: 991px) {
+        .card .carousel-caption h3 {
+            margin-top: 0;
+            font-size: 16px;
+            font-weight: 700;
+        }
+    }
+
+    /* Slider */
+    .doctors,
+    .doctors .main_cont {
+        height: 50vh;
+    }
+
+    .consultants,
+    .consultants .main_cont {
+        height: 80vh;
+    }
+
+    .doctors .cont {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .doctors .card {
+        background-color: transparent;
+        flex-direction: row;
+        align-items: center;
+        cursor: grab;
+    }
+
+    .card-body h1 {
+        font-size: 20px;
+        color: #000;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+
+    .doctors .icons {
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .consltants_icons {
+        height: 70px;
+        border-radius: 100%;
+        object-fit: contain;
+        object-position: top;
+    }
+
+    .doctors .card-body {
+        width: 60%;
+        background-color: transparent;
+        text-align: left;
+        /* padding: 15px 20px; */
+    }
+
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .doctorSlide .swiper-slide {
+        height: 150px;
+        background-color: #fff;
+        border: 1px solid #eeeeee;
+        border-radius: 6px;
+        box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.17);
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        height: 240px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .swiper-button-prev,
+    .swiper-rtl .swiper-button-next {
+        left: 40%;
+    }
+
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+        right: 40%;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        top: 60%;
+    }
+
+    /* doctors */
+
+    /* testimonial */
+
+    .testimonials .card .carousel-caption .content {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 35%;
+        width: 100%;
+        background-color: #4CD4CC;
+        border-top-right-radius: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 10px;
+    }
+
+    .testimonials .card .carousel-caption {
+        padding: 0;
+        right: 15px;
+        left: 15px;
+        top: 15px;
+        color: #3d3d3d;
+        border: 1px solid #ccc;
+        min-height: 346px;
+        padding: 25px;
+        border-radius: 6px;
+        background-color: #fff;
+        position: relative;
+    }
+
+    .testimonials .top {
+        height: 50%;
+    }
+
+    .testimonials .top i {
+        color: #4CD4CC;
+    }
+
+    .testimonials .top p {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .testimonials .content h3 {
+        color: #fff;
+        font-size: 24px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+
+    .testimonials .content .s_icons {
+        color: #fff;
+        font-size: 20px;
+        margin-top: 5px;
+    }
+    
+    .testimonials .bottom_img {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 80px;
+        width: 80px;
+        border-radius: 100%;
+        object-fit: cover;
+        object-position: top;
+        z-index: 100;
+        bottom: 25%;
     }
 </style>
