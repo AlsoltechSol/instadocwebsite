@@ -38,16 +38,16 @@ Route::get('/labtestResult/{lang}', function () {
 Route::get('/labtestForm/{lang}', function () {
     return view('labtestForm');
 });
-Route::get('/VideoConsult/{lang}', function () {
-    return view('VideoConsult');
-});
-Route::get('/DocConsultForm/{lang}', function () {
-    return view('DocConsultForm');
-});
+Route::get('/VideoConsult/{lang}', [App\Http\Controllers\VideoConsultController::class, 'getDoctors']);
+Route::get('/DocConsultForm/{lang}', [\App\Http\Controllers\RequestController::class, 'appointmentForm']);
 
+Route::post('/appointment-form', [App\Http\Controllers\RequestController::class, 'appointment'])->name('appointment.submit');
 Route::post('/medical-visits', [App\Http\Controllers\RequestController::class, 'medicalVisits'])->name('medical.visits');
 Route::post('/visa', [App\Http\Controllers\RequestController::class, 'visa'])->name('visa');
 Route::post('/lab-test', [App\Http\Controllers\RequestController::class, 'labTest'])->name('lab.test');
+
+
+// Route::get('/video-consult', [App\Http\Controllers\VideoConsultController::class, 'getDoctors']);
 
 Route::resource('contact', ContactController::class);
 
