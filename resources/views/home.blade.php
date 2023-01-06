@@ -156,7 +156,7 @@
                                             <div class="post-content">
                                                 <h3>{{ __('msg.Medical-Consultation') }}</h3>
                                                 <p>{{ __('msg.MedicalDescription') }}</p>
-                                                <a class="lab-btn" href="{{ url('medical-visits/en') }}">Submit Now
+                                                <a class="lab-btn" href="{{ url('DocConsultForm/en') }}">Submit Now
                                                     <i class="fa-solid fa-chevron-right"></i>
                                                 </a>
                                             </div>
@@ -220,7 +220,7 @@
                                             <div class="post-content">
                                                 <h3>{{__("msg.Travel")}}</h3>
                                                 <p>{{__("msg.Travel-description")}}</p>
-                                                <a class="lab-btn" href="{{url('/VideoConsult/en')}}">Submit Now
+                                                <a class="lab-btn" href="{{url('/medical-visits/en')}}">Submit Now
                                                     <i class="fa-solid fa-chevron-right"></i>
                                                 </a>
                                             </div>

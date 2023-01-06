@@ -175,60 +175,17 @@
             <h1 class="heading">Our Doctors</h1>
             <div class="swiper-container mySwiper mt-5">
                 <div class="swiper-wrapper doctorSlide">
+                    @foreach ($doctors as $item)
                     <div class="swiper-slide">
                         <div class="card" style="width: 18rem; height: 100%;">
                             <img src={{ asset('profile.png') }} class="card-img-top icons">
                             <div class="card-body">
-                                <h1 class="card-title">Dr. Steven <span style="font-size: 12px;"> <i class="fa fa-star"></i> 4.3</span></h1>
-                                <p class="card-text">General Physician</p>
+                                <h1 class="card-title">{{$item->name}} <span style="font-size: 12px;"> <i class="fa fa-star"></i> 4.3</span></h1>
+                                <p class="card-text">{{$item->specialization}}</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card" style="width: 18rem; height: 100%;">
-                            <img src={{ asset('profile.png') }} class="card-img-top icons">
-                            <div class="card-body">
-                                <h1 class="card-title">Dr. Steven <span style="font-size: 12px;"> <i class="fa fa-star"></i> 4.3</span></h1>
-                                <p class="card-text">General Physician</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card" style="width: 18rem; height: 100%;">
-                            <img src={{ asset('profile.png') }} class="card-img-top icons">
-                            <div class="card-body">
-                                <h1 class="card-title">Dr. Steven <span style="font-size: 12px;"> <i class="fa fa-star"></i> 4.3</span></h1>
-                                <p class="card-text">General Physician</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card" style="width: 18rem; height: 100%;">
-                            <img src={{ asset('profile.png') }} class="card-img-top icons">
-                            <div class="card-body">
-                                <h1 class="card-title">Dr. Steven <span style="font-size: 12px;"> <i class="fa fa-star"></i> 4.3</span></h1>
-                                <p class="card-text">General Physician</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card" style="width: 18rem; height: 100%;">
-                            <img src={{ asset('profile.png') }} class="card-img-top icons">
-                            <div class="card-body">
-                                <h1 class="card-title">Dr. Steven <span style="font-size: 12px;"> <i class="fa fa-star"></i> 4.3</span></h1>
-                                <p class="card-text">General Physician</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card" style="width: 18rem; height: 100%;">
-                            <img src={{ asset('profile.png') }} class="card-img-top icons">
-                            <div class="card-body">
-                                <h1 class="card-title">Dr. Steven <span style="font-size: 12px;"> <i class="fa fa-star"></i> 4.3</span></h1>
-                                <p class="card-text">General Physician</p>
-                            </div>
-                        </div>
-                    </div>
+                    </div> 
+                    @endforeach
                 </div>
             </div>
         </div>
