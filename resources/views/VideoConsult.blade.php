@@ -15,8 +15,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 headLeft">
-                    <h1>Just Stay Home & Request Medical Advice Online</h1>
-                    <h3>Get your consultation at just ₹ 400</h3>
+                    <h1>{{__("msg.stay-home-request")}}</h1>
+                    <h3>{{__("msg.consultation")}} ₹ 400</h3>
                     <div class="doc">
                         <img src={{ asset('doctors.png') }} class="doc-pic">
                         <h4>+1000 Doctors Online</h4>
@@ -33,7 +33,7 @@
     </div>
     <div class="offer mb-5">
         <div class="container">
-            <h1 class="heading">Offers</h1>
+            <h1 class="heading">{{__("msg.offer")}}</h1>
             <div class="row">
                 <div class="card col-md-12 mt-2">
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="100000">
@@ -172,63 +172,20 @@
     </div>
     <div class="doctors mt-5">
         <div class="container main_cont">
-            <h1 class="heading">Our Doctors</h1>
+            <h1 class="heading">{{__("msg.our-doctors")}}</h1>
             <div class="swiper-container mySwiper mt-5">
                 <div class="swiper-wrapper doctorSlide">
+                    @foreach ($doctors as $item)
                     <div class="swiper-slide">
                         <div class="card" style="width: 18rem; height: 100%;">
                             <img src={{ asset('profile.png') }} class="card-img-top icons">
                             <div class="card-body">
-                                <h1 class="card-title">Dr. Steven <span style="font-size: 12px;"> <i class="fa fa-star"></i> 4.3</span></h1>
-                                <p class="card-text">General Physician</p>
+                                <h1 class="card-title">{{$item->name}} <span style="font-size: 12px;"> <i class="fa fa-star"></i> 4.3</span></h1>
+                                <p class="card-text">{{$item->specialization}}</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card" style="width: 18rem; height: 100%;">
-                            <img src={{ asset('profile.png') }} class="card-img-top icons">
-                            <div class="card-body">
-                                <h1 class="card-title">Dr. Steven <span style="font-size: 12px;"> <i class="fa fa-star"></i> 4.3</span></h1>
-                                <p class="card-text">General Physician</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card" style="width: 18rem; height: 100%;">
-                            <img src={{ asset('profile.png') }} class="card-img-top icons">
-                            <div class="card-body">
-                                <h1 class="card-title">Dr. Steven <span style="font-size: 12px;"> <i class="fa fa-star"></i> 4.3</span></h1>
-                                <p class="card-text">General Physician</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card" style="width: 18rem; height: 100%;">
-                            <img src={{ asset('profile.png') }} class="card-img-top icons">
-                            <div class="card-body">
-                                <h1 class="card-title">Dr. Steven <span style="font-size: 12px;"> <i class="fa fa-star"></i> 4.3</span></h1>
-                                <p class="card-text">General Physician</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card" style="width: 18rem; height: 100%;">
-                            <img src={{ asset('profile.png') }} class="card-img-top icons">
-                            <div class="card-body">
-                                <h1 class="card-title">Dr. Steven <span style="font-size: 12px;"> <i class="fa fa-star"></i> 4.3</span></h1>
-                                <p class="card-text">General Physician</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card" style="width: 18rem; height: 100%;">
-                            <img src={{ asset('profile.png') }} class="card-img-top icons">
-                            <div class="card-body">
-                                <h1 class="card-title">Dr. Steven <span style="font-size: 12px;"> <i class="fa fa-star"></i> 4.3</span></h1>
-                                <p class="card-text">General Physician</p>
-                            </div>
-                        </div>
-                    </div>
+                    </div> 
+                    @endforeach
                 </div>
             </div>
         </div>
@@ -301,7 +258,7 @@
 
     <div class="testimonials mb-5">
         <div class="container">
-            <h1 class="heading">Testimonials</h1>
+            <h1 class="heading">{{__("msg.testi")}}</h1>
             <div class="row">
                 <div class="card col-md-12 mt-2">
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="100000">

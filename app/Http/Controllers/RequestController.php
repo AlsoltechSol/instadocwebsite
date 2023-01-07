@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Appointment;
+use App\Models\Doctor;
 use App\Models\PatientRequest;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 
 class RequestController extends Controller
 {
@@ -118,6 +121,31 @@ class RequestController extends Controller
 
           
         PatientRequest::create($data);
+
+        return back()->with('success', 'Form Submited Successfully!');
+    }
+
+    public function appointmentForm($lang){
+        App::setLocale($lang);
+        $doctors = Doctor::all();
+        return view('DocConsultForm', compact('doctors'));
+    }
+
+    public function appointment(Request $request){
+    
+        $request->validate([
+            'name' => 'required',
+            'mobile' => 'required'
+        ]);
+
+        $data = $request->all();
+        $data['appointment_status'] = 'Active';
+        $data['payment_status'] = 'Pending';
+
+        
+        $data['patient_id'] = 1;
+
+        Appointment::create($data);
 
         return back()->with('success', 'Form Submited Successfully!');
     }

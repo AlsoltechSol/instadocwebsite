@@ -7,11 +7,9 @@
     <div class="container">
         <div class="banner-wrapper">
             <div class="banner-content">
-                <h2 class="wow fadeInDown" data-wow-duration="2s" data-wow-delay=".1s">Get Best Medical
-                    Consultations
+                <h2 class="wow fadeInDown" data-wow-duration="2s" data-wow-delay=".1s">{{__("msg.banner1")}}
                 </h2>
-                <h1 class="wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".1s"><b>Medicine Order</b> And Help On
-                    Your Medical Visits...</h1>
+                <h1 class="wow fadeInLeft" data-wow-duration="2s" data-wow-delay=".1s"><b>{{__("msg.banner2")}}</b> {{__("msg.banner3")}}...</h1>
 
             </div>
         </div>
@@ -156,7 +154,7 @@
                                             <div class="post-content">
                                                 <h3>{{ __('msg.Medical-Consultation') }}</h3>
                                                 <p>{{ __('msg.MedicalDescription') }}</p>
-                                                <a class="lab-btn" href="{{ url('medical-visits/en') }}">Submit Now
+                                                <a class="lab-btn" href="{{ url('DocConsultForm/en') }}">Submit Now
                                                     <i class="fa-solid fa-chevron-right"></i>
                                                 </a>
                                             </div>
@@ -219,8 +217,8 @@
                                         <div class="col-lg-6">
                                             <div class="post-content">
                                                 <h3>{{__("msg.Travel")}}</h3>
-                                                <p>{{__("msg.Travel-description")}}</p>
-                                                <a class="lab-btn" href="{{url('/VideoConsult/en')}}">Submit Now
+                                                <p></p>
+                                                <a class="lab-btn" href="{{url('/medical-visits/en')}}">Submit Now
                                                     <i class="fa-solid fa-chevron-right"></i>
                                                 </a>
                                             </div>
