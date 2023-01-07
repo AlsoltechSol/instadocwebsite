@@ -6,7 +6,7 @@
 @section('content')
 <Section id="medicalVisit">
     <div class="container mt-2">
-        <div class="heading">Request For Appointment</div>
+        <div class="heading">{{__("msg.Request-For-Appointment")}}</div>
         <form method="POST" action="{{ route('appointment.submit') }}" >
             @csrf
             <div class="row">
