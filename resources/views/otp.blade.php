@@ -128,20 +128,22 @@
 
 <div class="container">
 
-    <form class="form-signin rounded-sm shadow">
+    <div class="form-signin rounded-sm shadow">
+        
         <div class="mx-auto" style="width:200px"><img class="mb-4 logo" src="{{ asset('/frontend/assets/images/logo/logo-4.png') }}"></div>
         <div class="tab-content">
 
             <!-- Tab1 -->
-            <div id="login" class="container tab-pane active">
+            <form action="{{route('otp')}}" id="login" class="container tab-pane active" method="POST">
+                @csrf
                 <label for="inputnumber" class="sr-only">Enter OTP</label>
-                <input type="number" id="inputnumber" class="form-control mb-4" placeholder="Enter OTP" required autofocus>
+                <input name="otp" type="number" id="inputnumber" class="form-control mb-4" placeholder="Enter OTP" required autofocus>
                 <button class="btn btn-lg btn-dark btn-block" type="submit">Login</button>
                 <p class="mt-4 mb-0 text-muted small">InstaDoc works best with Google Chrome, Mozilla Firefox and Safari</p>
-            </div>
+            </form>
         </div>
 
-    </form>
+    </div>
 </div><!-- /.container -->
 
 @endsection

@@ -41,7 +41,7 @@ Route::get('/labtestForm/{lang}', function () {
 
 Route::get('/login/{lang}', function () {
     return view('login');
-});
+})->name('login');
 Route::get('/otp/{lang}', function () {
     return view('otp');
 });
@@ -55,6 +55,15 @@ Route::post('/medical-visits', [App\Http\Controllers\RequestController::class, '
 Route::post('/visa', [App\Http\Controllers\RequestController::class, 'visa'])->name('visa');
 Route::post('/lab-test', [App\Http\Controllers\RequestController::class, 'labTest'])->name('lab.test');
 
+Route::get('/doctor-dashboard/{lang}', function(){
+    return view('doctor.dashboard');
+})->middleware('auth');
+
+Route::get('/patient-dashboard/{lang}', function(){
+    return view('patient.dashboard');
+})->middleware('auth');
+
+Route::post('/logout', [App\Http\Controllers\UserController::class, 'logout'])->name('logout');
 
 // Route::get('/video-consult', [App\Http\Controllers\VideoConsultController::class, 'getDoctors']);
 
@@ -65,5 +74,7 @@ Route::post('/patient-login', [App\Http\Controllers\UserController::class, 'pati
 
 // doctor-login
 Route::post('/doctor-login', [App\Http\Controllers\UserController::class, 'doctorLogin'])->name('doctor.login');
+
+Route::post('/verify-otp', [App\Http\Controllers\UserController::class, 'checkOtp'])->name('otp');
  
 // Route::get('lang/{lang}', [App\Http\Controllers\LanguageController::class, 'switchLang'])->name('lang.switch');
