@@ -4,7 +4,8 @@
         <div class="mobile-menu-wrapper">
             <div class="logo">
                 <a href="index.html">
-                    <img style="width: 120px !important;" src="{{ asset('/frontend/assets/images/logo/logo-4.png') }}" alt="Mukti">
+                    <img style="width: 120px !important;" src="{{ asset('/frontend/assets/images/logo/logo-4.png') }}"
+                        alt="Mukti">
                 </a>
             </div>
             <div class="open-menu"><i class="icofont-navigation-menu"></i></div>
@@ -21,7 +22,8 @@
                 <li><a href="#contact">Contact</a></li>
 
             </ul>
-            <button type="button" class="btn btn-light" style="height: fit-content; padding: 0.375rem 26px !important;" data-toggle="modal" data-target="#loginModal">
+            <button type="button" class="btn btn-light" style="height: fit-content; padding: 0.375rem 26px !important;"
+                data-toggle="modal" data-target="#loginModal">
                 Login
             </button>
 
@@ -38,7 +40,8 @@
         <div class="container">
             <div class="row justify-content-between align-items-center px-15">
                 <div class="header-logo">
-                    <a href="/" style="width: 120px !important" class="logo"><img src="{{ asset('frontend/assets/images/logo/logo-4.png') }}" alt="logo"></a>
+                    <a href="/" style="width: 120px !important" class="logo"><img
+                            src="{{ asset('frontend/assets/images/logo/logo-4.png') }}" alt="logo"></a>
                 </div>
                 <ul class="header-contact-info d-flex align-items-center">
                     <li class="item">
@@ -98,38 +101,33 @@
                                         <option value="/ni">Nepali</option>
                                     </select> --}}
                                 <select id="selectbox" name="" onchange="javascript:location.href = this.value;">
-                                    <option value="/en" <?php if (url()->full() == "http://127.0.0.1:8000/en") {
-                                                            echo "selected";
-                                                        }else if (url()->full() == "http://127.0.0.1:8000/DocConsultForm/en") {
-                                                            echo "selected";
-                                                        } 
-                                                        else if (url()->full() == "http://127.0.0.1:8000/VideoConsult/en") {
-                                                            echo "selected";
-                                                        }else {
-                                                            echo "";
-                                                        } ?>>English</option>
-                                    <option value="/bn" <?php if (url()->full() == "http://127.0.0.1:8000/bn") {
-                                                            echo "selected";
-                                                        }
-                                                        else if (url()->full() == "http://127.0.0.1:8000/DocConsultForm/bn") {
-                                                            echo "selected";
-                                                        } else if (url()->full() == "http://127.0.0.1:8000/VideoConsult/bn") {
-                                                            echo "selected";
-                                                        }
-                                                        else {
-                                                            echo "";
-                                                        } ?>>Bengali</option>
-                                    <option value="/ni" <?php if (url()->full() == "http://127.0.0.1:8000/ni") {
-                                                            echo "selected";
-                                                        }
-                                                        else if (url()->full() == "http://127.0.0.1:8000/DocConsultForm/ni") {
-                                                            echo "selected";
-                                                        } else if (url()->full() == "http://127.0.0.1:8000/VideoConsult/ni") {
-                                                            echo "selected";
-                                                        }
-                                                        else {
-                                                            echo "";
-                                                        } ?>>Nepali</option>
+                                    <option value="/en" <?php if (url()->full() == 'http://127.0.0.1:8000/en') {
+                                        echo 'selected';
+                                    } elseif (url()->full() == 'http://127.0.0.1:8000/DocConsultForm/en') {
+                                        echo 'selected';
+                                    } elseif (url()->full() == 'http://127.0.0.1:8000/VideoConsult/en') {
+                                        echo 'selected';
+                                    } else {
+                                        echo '';
+                                    } ?>>English</option>
+                                    <option value="/bn" <?php if (url()->full() == 'http://127.0.0.1:8000/bn') {
+                                        echo 'selected';
+                                    } elseif (url()->full() == 'http://127.0.0.1:8000/DocConsultForm/bn') {
+                                        echo 'selected';
+                                    } elseif (url()->full() == 'http://127.0.0.1:8000/VideoConsult/bn') {
+                                        echo 'selected';
+                                    } else {
+                                        echo '';
+                                    } ?>>Bengali</option>
+                                    <option value="/ni" <?php if (url()->full() == 'http://127.0.0.1:8000/ni') {
+                                        echo 'selected';
+                                    } elseif (url()->full() == 'http://127.0.0.1:8000/DocConsultForm/ni') {
+                                        echo 'selected';
+                                    } elseif (url()->full() == 'http://127.0.0.1:8000/VideoConsult/ni') {
+                                        echo 'selected';
+                                    } else {
+                                        echo '';
+                                    } ?>>Nepali</option>
                                 </select>
                             </div>
                         </div>
@@ -158,9 +156,44 @@
 
                             </li>
                         </ul>
-                        <a href="{{url('/login/en')}}" class="btn btn-light" style="height: fit-content; padding: 0.375rem 26px !important;">
-                            Login
-                        </a>
+                        @guest
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('login', 'en') }}">
+                                    <i class="fa-solid fa-right-from-bracket"></i>
+                                    {{ __('Login') }}
+                                </a>
+                            </li>
+                        @else
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    @if (Auth::user()->name)
+                                        {{ ucwords(trans(Auth::user()->name)) }}
+                                    @else
+                                        User
+                                    @endif
+                                    <span class="caret"></span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+
+
+                                    <a class="dropdown-item" href="#">
+
+                                        Dashboard
+                                    </a>
+
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                        onclick="event.preventDefault();
+                                document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                        style="display: none;">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </li>
+                        @endguest
 
 
                     </div>
