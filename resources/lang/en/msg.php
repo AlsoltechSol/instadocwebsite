@@ -31,5 +31,16 @@
         
         'Contact'=>"Contact No:",
         'Contact-us'=>"Do you have any queries, suggestions, or requests? InstaDoctor is a chain of patient care facilities. To contact us, please fill out the form below.",
+        'Request-For-Appointment' => "Request For Appointment",
+        
+        'stay-home-request' => "Just Stay Home & Request Medical Advice Online",
+        'consultation' => "Get your consultation at just ",
+        'our-doctors' => "Our Doctors",
+        'offer' => "Offers",
+        'testi' => "Testimonials",
+        'banner1' => "Get Best Medical Consultations",
+        'banner2' => "Medicine Order",
+        'banner3' => "And Help On Your Medical Visits"
+
     ]
 ?>

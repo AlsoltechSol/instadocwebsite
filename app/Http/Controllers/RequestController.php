@@ -6,6 +6,7 @@ use App\Models\Appointment;
 use App\Models\Doctor;
 use App\Models\PatientRequest;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 
 class RequestController extends Controller
 {
@@ -124,7 +125,8 @@ class RequestController extends Controller
         return back()->with('success', 'Form Submited Successfully!');
     }
 
-    public function appointmentForm(){
+    public function appointmentForm($lang){
+        App::setLocale($lang);
         $doctors = Doctor::all();
         return view('DocConsultForm', compact('doctors'));
     }

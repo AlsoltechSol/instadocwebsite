@@ -100,17 +100,34 @@
                                 <select id="selectbox" name="" onchange="javascript:location.href = this.value;">
                                     <option value="/en" <?php if (url()->full() == "http://127.0.0.1:8000/en") {
                                                             echo "selected";
-                                                        } else {
+                                                        }else if (url()->full() == "http://127.0.0.1:8000/DocConsultForm/en") {
+                                                            echo "selected";
+                                                        } 
+                                                        else if (url()->full() == "http://127.0.0.1:8000/VideoConsult/en") {
+                                                            echo "selected";
+                                                        }else {
                                                             echo "";
                                                         } ?>>English</option>
                                     <option value="/bn" <?php if (url()->full() == "http://127.0.0.1:8000/bn") {
                                                             echo "selected";
-                                                        } else {
+                                                        }
+                                                        else if (url()->full() == "http://127.0.0.1:8000/DocConsultForm/bn") {
+                                                            echo "selected";
+                                                        } else if (url()->full() == "http://127.0.0.1:8000/VideoConsult/bn") {
+                                                            echo "selected";
+                                                        }
+                                                        else {
                                                             echo "";
                                                         } ?>>Bengali</option>
                                     <option value="/ni" <?php if (url()->full() == "http://127.0.0.1:8000/ni") {
                                                             echo "selected";
-                                                        } else {
+                                                        }
+                                                        else if (url()->full() == "http://127.0.0.1:8000/DocConsultForm/ni") {
+                                                            echo "selected";
+                                                        } else if (url()->full() == "http://127.0.0.1:8000/VideoConsult/ni") {
+                                                            echo "selected";
+                                                        }
+                                                        else {
                                                             echo "";
                                                         } ?>>Nepali</option>
                                 </select>
