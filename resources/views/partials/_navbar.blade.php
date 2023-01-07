@@ -158,9 +158,9 @@
 
                             </li>
                         </ul>
-                        <button type="button" class="btn btn-light" style="height: fit-content; padding: 0.375rem 26px !important;" data-toggle="modal" data-target="#loginModal">
+                        <a href="{{url('/login/en')}}" class="btn btn-light" style="height: fit-content; padding: 0.375rem 26px !important;">
                             Login
-                        </button>
+                        </a>
 
 
                     </div>
@@ -168,55 +168,4 @@
             </div>
         </nav>
     </div>
-
-    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header border-bottom-0">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form class="form-signin">
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-pills mb-4">
-                            <li class="nav-item pill-1">
-                                <a class="nav-link active rounded-0" data-toggle="tab" href="#login">Paitent Login</a>
-                            </li>
-                            <li class="nav-item pill-2">
-                                <a class="nav-link  rounded-0" data-toggle="tab" href="#register">Doctor Login</a>
-                            </li>
-                        </ul>
-                        <!-- Tab panes -->
-                        <div class="tab-content">
-
-                            <!-- Tab1 -->
-                            <div id="login" class="container tab-pane active">
-                                <form action="{{route('patient.login')}}" method="POST">
-                                    @csrf
-                                    <label for="inputEmail" class="sr-only">Mobile Number</label>
-                                    <input name="mobile" type="number" id="inputEmail" class="form-control mb-4" placeholder="Mobile Number" required autofocus>
-                                    <button class="btn btn-lg btn-dark btn-block" type="submit">Paitent Login</button>
-                                </form>
-                              
-                            </div>
-
-                            <!-- Tab2 -->
-                            <div id="register" class="container tab-pane fade">
-                                <form action="{{route('doctor.login')}}" method="POST">
-                                    @csrf
-                                    <label for="inputEmail" class="sr-only">Mobile Number</label>
-                                    <input name="mobile" type="number" id="inputEmail" class="form-control mb-4" placeholder="Mobile Number" required autofocus>
-                                    <button class="btn btn-lg btn-dark btn-block" type="submit">Doctor Login</button>
-                                </form>
-                            </div>
-                        </div>
-
-                    </form>
-                    <div class="modal-footer d-flex justify-content-center">
-                        <div class="signup-section">Not a member yet? <a href="#a" class="text-info"> Sign Up</a>.</div>
-                    </div>
-                </div>
-            </div>
 </header>

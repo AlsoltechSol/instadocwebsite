@@ -14,12 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/',function($lang = 'en'){
+Route::get('/', function ($lang = 'en') {
     App::setLocale($lang);
     return view('home');
 });
 
-Route::get('/{lang}',function($lang){
+Route::get('/{lang}', function ($lang) {
     App::setLocale($lang);
 
     return view('home');
@@ -38,8 +38,17 @@ Route::get('/labtestResult/{lang}', function () {
 Route::get('/labtestForm/{lang}', function () {
     return view('labtestForm');
 });
+
+Route::get('/login/{lang}', function () {
+    return view('login');
+});
+Route::get('/otp/{lang}', function () {
+    return view('otp');
+});
+
 Route::get('/VideoConsult/{lang}', [App\Http\Controllers\VideoConsultController::class, 'getDoctors']);
 Route::get('/DocConsultForm/{lang}', [\App\Http\Controllers\RequestController::class, 'appointmentForm']);
+
 
 Route::post('/appointment-form', [App\Http\Controllers\RequestController::class, 'appointment'])->name('appointment.submit');
 Route::post('/medical-visits', [App\Http\Controllers\RequestController::class, 'medicalVisits'])->name('medical.visits');
