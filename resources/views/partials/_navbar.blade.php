@@ -100,7 +100,10 @@
                                         <option value="/bn">Bengali</option>
                                         <option value="/ni">Nepali</option>
                                     </select> --}}
-                                <select id="selectbox" name="" onchange="javascript:location.href = this.value;">
+                                    <?php
+                                        $currentURL = url()->current();
+                                    ?>
+                                    <select id="selectbox" name="" onchange="lanchange(this.value)">
                                     <option value="/en" <?php if (url()->full() == 'http://127.0.0.1:8000/en') {
                                         echo 'selected';
                                     } elseif (url()->full() == 'http://127.0.0.1:8000/DocConsultForm/en') {
@@ -129,6 +132,12 @@
                                         echo '';
                                     } ?>>Nepali</option>
                                 </select>
+                                <!-- <select id="selectbox" name="" onchange="javascript:location.href = this.value;"> -->
+                                <!-- <select id="selectbox" name="" onchange="lanchange(this.value)">
+                                    <option value="/en"<?php if(str_contains(url()->current(), '/en')){echo "selected";}else {echo "";} ?>>English</option>
+                                    <option value="/bn" <?php if(str_contains(url()->current(), '/bi')){echo "selected";}else {echo "";} ?>>Bengali</option>
+                                    <option value="/ni" <?php if(str_contains(url()->current(), '/ni')){echo "selected";}else {echo "";} ?>>Nepali</option>
+                                </select> -->
                             </div>
                         </div>
                     </li>

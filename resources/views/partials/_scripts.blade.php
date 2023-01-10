@@ -490,16 +490,33 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script>
-    $(document).ready(function() {
-        var url = window.location.href;
-        if (url == "http://127.0.0.1:8000/en") {
-            $('select>option:eq(0)').attr('selected', true);
-        } else if (url == 'http://127.0.0.1:8000/bn') {
-            $('select>option:eq(1)').attr('selected', true);
-        } else if (url == 'http://127.0.0.1:8000/ni') {
-            $('select>option:eq(2)').attr('selected', true);
+    // $(document).ready(function() {
+    //     var url = window.location.href;
+    //     if (url == "http://127.0.0.1:8000/en") {
+    //         $('select>option:eq(0)').attr('selected', true);
+    //     } else if (url == 'http://127.0.0.1:8000/bn') {
+    //         $('select>option:eq(1)').attr('selected', true);
+    //     } else if (url == 'http://127.0.0.1:8000/ni') {
+    //         $('select>option:eq(2)').attr('selected', true);
+    //     }
+    // });
+    function lanchange(value){
+        let url = window.location.href;
+        alert("url--"+url);
+        alert("value--"+value);
+        var new_url ="";
+        // const myArray = url.split("/");
+        // let lastElement = myArray[myArray.length - 1];
+        if(url.includes("/bn")){
+            new_url = url.replace('/bn',value);
+        }else if(url.includes("/en")){
+            new_url = url.replace('/en',value);
+        }else if(url.includes("/ni")){
+            new_url = url.replace('/ni',value);
         }
-    });
+        location.href = new_url;
+        // window.location.href(new_url);
+    }
 </script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script>
