@@ -107,6 +107,8 @@
                                         echo 'selected';
                                     } elseif (url()->full() == 'http://127.0.0.1:8000/VideoConsult/en') {
                                         echo 'selected';
+                                    } elseif (url()->full() == 'http://127.0.0.1:8000/visa/en') {
+                                        echo 'selected';
                                     } else {
                                         echo '';
                                     } ?>>English</option>
@@ -116,7 +118,9 @@
                                         echo 'selected';
                                     } elseif (url()->full() == 'http://127.0.0.1:8000/VideoConsult/bn') {
                                         echo 'selected';
-                                    } else {
+                                    } elseif (url()->full() == 'http://127.0.0.1:8000/visa/bn') {
+                                        echo 'selected';
+                                    }  else {
                                         echo '';
                                     } ?>>Bengali</option>
                                     <option value="/ni" <?php if (url()->full() == 'http://127.0.0.1:8000/ni') {
@@ -125,7 +129,9 @@
                                         echo 'selected';
                                     } elseif (url()->full() == 'http://127.0.0.1:8000/VideoConsult/ni') {
                                         echo 'selected';
-                                    } else {
+                                    } elseif (url()->full() == 'http://127.0.0.1:8000/visa/ni') {
+                                        echo 'selected';
+                                    }  else {
                                         echo '';
                                     } ?>>Nepali</option>
                                 </select> -->
@@ -153,12 +159,12 @@
                                 <a href="/">Home</a>
 
                             </li>
-                            <li><a href="#about">About</a></li>
+                            <li><a href="{{route('home')}}/#about">About</a></li>
 
-                            <li><a href="#services">Services</a>
+                            <li><a href="{{route('home')}}/#services">Services</a>
 
                             </li>
-                            <li><a href="#contact">Contact</a>
+                            <li><a href="{{route('home')}}/#contact">Contact</a>
 
                             </li>
                         </ul>

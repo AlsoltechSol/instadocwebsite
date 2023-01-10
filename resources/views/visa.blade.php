@@ -6,7 +6,7 @@
 @section('content')
 <Section id="medicalVisit">
     <div class="container mt-2">
-        <div class="heading">Request For Visa</div>
+        <div class="heading">{{__('msg.visa')}}</div>
         <form method="POST" action="{{route('visa')}}" enctype="multipart/form-data">
             @csrf
             <div class="row">
@@ -40,7 +40,7 @@
                             <input name="passport_no" type="text" class="form-control" id="Date" placeholder="Passport No." required>
                         </div>
 
-                        <div class="heading col-md-12 ml-3">Upload Documents</div>
+                        <div class="heading col-md-12 ml-3">{{__('msg.visa-doc')}}</div>
 
                         <div class="col-md-6 mb-3">
                             <label class="form-label" for="inputGroupFile01">Age Proof <span class="badge badge-danger">* (Birth Certificate)</span></label>

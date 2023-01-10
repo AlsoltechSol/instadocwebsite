@@ -6,7 +6,7 @@
 @section('content')
     <Section id="medicalVisit">
         <div class="container mt-2">
-            <div class="heading">Request For Medical Visit</div>
+            <div class="heading">{{__('msg.med-visit')}}</div>
             <form method="POST" action="{{ route('medical.visits') }}" enctype="multipart/form-data">
                 <div class="row">
                     @csrf
