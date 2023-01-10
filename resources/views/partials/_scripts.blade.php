@@ -502,11 +502,7 @@
     // });
     function lanchange(value){
         let url = window.location.href;
-        alert("url--"+url);
-        alert("value--"+value);
         var new_url ="";
-        // const myArray = url.split("/");
-        // let lastElement = myArray[myArray.length - 1];
         if(url.includes("/bn")){
             new_url = url.replace('/bn',value);
         }else if(url.includes("/en")){
