@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function ($lang = 'en') {
     App::setLocale($lang);
     return view('home');
-});
+})->name('home');
 
 Route::get('/{lang}', function ($lang) {
     App::setLocale($lang);
@@ -25,17 +25,20 @@ Route::get('/{lang}', function ($lang) {
     return view('home');
 });
 
-Route::get('/medical-visits/{lang}', function () {
+Route::get('/medical-visits/{lang}', function ($lang) {
+    App::setLocale($lang);
     return view('medical_visits');
 });
 
-Route::get('/visa/{lang}', function () {
+Route::get('/visa/{lang}', function ($lang) {
+    App::setLocale($lang);
     return view('visa');
 });
 Route::get('/labtestResult/{lang}', function () {
     return view('labtestResult');
 });
-Route::get('/labtestForm/{lang}', function () {
+Route::get('/labtestForm/{lang}', function ($lang) {
+    App::setLocale($lang);
     return view('labtestForm');
 });
 
@@ -45,6 +48,11 @@ Route::get('/login/{lang}', function () {
 Route::get('/otp/{lang}', function () {
     return view('otp');
 });
+Route::get('/prescription/{lang}', function () {
+    return view('prescription');
+});
+
+Route::post('/prescription', [App\Http\Controllers\PrescriptionController::class, 'store'])->name('prescription.store');
 
 Route::get('/VideoConsult/{lang}', [App\Http\Controllers\VideoConsultController::class, 'getDoctors']);
 Route::get('/DocConsultForm/{lang}', [\App\Http\Controllers\RequestController::class, 'appointmentForm']);

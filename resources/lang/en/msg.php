@@ -40,7 +40,11 @@
         'testi' => "Testimonials",
         'banner1' => "Get Best Medical Consultations",
         'banner2' => "Medicine Order",
-        'banner3' => "And Help On Your Medical Visits"
+        'banner3' => "And Help On Your Medical Visits",
+        'visa' => "Request For Visa",
+        'visa-doc' => "Upload Documents",
+        'lab-test' => "Lab Test Form",
+        'med-visit' => "Request For Medical Visit",
 
     ]
 ?>
