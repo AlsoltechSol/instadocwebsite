@@ -195,7 +195,7 @@
         //             console.log(res); // show response from the php script.
         //         }
         //     });
-        });
+        // });
     </script>
 
 @endsection

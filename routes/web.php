@@ -42,6 +42,7 @@ Route::get('/labtestForm/{lang}', function () {
 Route::get('/login/{lang}', function () {
     return view('login');
 })->name('login');
+
 Route::get('/otp/{lang}', function () {
     return view('otp');
 });
@@ -55,13 +56,33 @@ Route::post('/medical-visits', [App\Http\Controllers\RequestController::class, '
 Route::post('/visa', [App\Http\Controllers\RequestController::class, 'visa'])->name('visa');
 Route::post('/lab-test', [App\Http\Controllers\RequestController::class, 'labTest'])->name('lab.test');
 
-Route::get('/doctor-dashboard/{lang}', function(){
+Route::get('/doctor-dashboard/{lang}', function () {
     return view('doctor.dashboard');
 })->middleware('auth');
 
-Route::get('/patient-dashboard/{lang}', function(){
+Route::get('/patient-dashboard/{lang}', function () {
     return view('patient.dashboard');
-})->middleware('auth');
+});
+
+Route::get('/patient-dashboard/{lang}', function () {
+    return view('patient.dashboard');
+})->name('patient.dashboard');
+
+Route::get('/patient-appointments/{lang}', function () {
+    return view('patient.appointments');
+})->name('patient.appointments');
+
+Route::get('/patient-prescription/{lang}', function () {
+    return view('patient.prescription');
+})->name('patient.prescription');
+
+Route::get('/patient-medicalRecords/{lang}', function () {
+    return view('patient.medicalRecords');
+})->name('patient.medicalRecords');
+
+Route::get('/patient-biling/{lang}', function () {
+    return view('patient.biling');
+})->name('patient.biling');
 
 Route::post('/logout', [App\Http\Controllers\UserController::class, 'logout'])->name('logout');
 
