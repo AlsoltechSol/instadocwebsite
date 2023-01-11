@@ -12,7 +12,7 @@
         </div>
         <nav id="mobile-nav">
             <ul class="home-nav">
-                <li class="active">
+                <li>
                     <a href="/">Home</a>
 
                 </li>
@@ -155,7 +155,7 @@
                 <div class="menu-area">
                     <div class="row justify-content-between px-15" style="align-items: center;">
                         <ul class="main-menu d-flex">
-                            <li class="active">
+                            <li>
                                 <a href="/">Home</a>
 
                             </li>
@@ -169,8 +169,8 @@
                             </li>
                         </ul>
                         @guest
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login', 'en') }}">
+                            <li class="nav-item" style="list-style-type: none;">
+                                <a class="nav-link" href="{{ route('login', 'en') }}" style="color: #fff !important;">
                                     <i class="fa-solid fa-right-from-bracket"></i>
                                     {{ __('Login') }}
                                 </a>
